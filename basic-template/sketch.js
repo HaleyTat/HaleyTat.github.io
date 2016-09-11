@@ -10,9 +10,11 @@ background(127,255,212);
 }
 
 function draw() {
+  noStroke()
   ellipse(250, 180, 290, 340);
-  noFill();
+  fill(256,256,256);
+  noStroke()
   rect(150,250,150,200);
-  noFill();
+  fill(256,256,256);
 
 }
