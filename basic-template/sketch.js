@@ -5,12 +5,14 @@
 function setup() {
 
 createCanvas(500,500);
-background(0,255,0);
+background(127,255,212);
 
 }
 
 function draw() {
   ellipse(250, 180, 290, 340);
   fill(256,256,256);
-
+  rect(250,200,200,150);
+  fill(256,256,256);
+  
 }
