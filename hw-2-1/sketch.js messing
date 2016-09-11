@@ -6,7 +6,7 @@ var horizontalCenter = 400;
 
 function setup() {
   createCanvas(500,500);
-  background(255,255,0);
+  background(127,255,212);
 
 }
 
