@@ -13,6 +13,7 @@ function draw() {
 
   ellipse(130,140,80,30);
   fill(256,256,256);
+  
   noStroke();
   ellipse(250, 180, 290, 340);
   fill(256,256,256);
