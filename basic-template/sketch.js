@@ -10,7 +10,7 @@ background(0,255,0);
 }
 
 function draw() {
-  ellipse(250, 0, 290, 340);
+  ellipse(250, -180, 290, 340);
   fill(256,256,256);
 
 }
