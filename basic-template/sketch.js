@@ -11,6 +11,11 @@ background(127,255,212);
 
 function draw() {
 
+  fill(256,256,256);
+  ellipse(horizontalCenter-10,180,80,40);
+  fill(256,256,256);
+  ellipse(horizontalCenter,180,80,40);
+
   noStroke();
   fill(250,240,230);
   ellipse(250, 200, 290, 340);
