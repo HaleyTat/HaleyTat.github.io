@@ -2,8 +2,6 @@
 
 // description: sketching shapes
 
-var horizontalCenter = 400;
-
 function setup() {
   createCanvas(500,500);
   background(127,255,212);
