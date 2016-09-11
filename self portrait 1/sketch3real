@@ -19,7 +19,5 @@ function draw() {
     noStroke();
     rect(175,250,150,200);
     fill(256,256,256);
-    ellipse(220,140,80,40);
-    fill(250,240,230);
 
 }
