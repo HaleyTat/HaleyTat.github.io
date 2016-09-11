@@ -11,7 +11,7 @@ background(127,255,212);
 
 function draw() {
 
-  ellipse(200,140,80,40);
+  ellipse(220,140,80,40);
   fill(256,256,256);
 
   noStroke();
