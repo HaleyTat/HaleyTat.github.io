@@ -31,7 +31,8 @@ function draw() {
   ellipse(horizontalCenter,180,80,40);
   //sides of nose
   fill(256,256,256);
-  ellipse(horizontalCenter,250,50,50);
-  ellipse(horizontalCenter-10,250,50,50);
+  ellipse(270,250,50,50);
+  ellipse(230,250,50,50);
+  ellipse(250,250,50,60);
 
 }
