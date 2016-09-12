@@ -44,7 +44,7 @@ function draw() {
 
   //middle of nose
   fill(256,256,256);
-  rect(230,270,30,290);
+  rect(250,300,30,60);
 
   //mouth
   fill(256,256,256);
