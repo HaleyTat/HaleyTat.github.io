@@ -34,5 +34,8 @@ function draw() {
   ellipse(270,250,50,50);
   ellipse(230,250,50,50);
   ellipse(250,250,50,60);
+  //middle of nose
+  fill(256,256,256);
+  rect(230,270,60,90);
 
 }
