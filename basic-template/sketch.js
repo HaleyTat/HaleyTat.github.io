@@ -29,4 +29,8 @@ function draw() {
   fill(256,256,256);
   ellipse(horizontalCenter,180,80,40);
 
+  fill(256,256,256);
+  ellipse(horizontalCenter,250,50,50);
+  ellipse(horizontalCenter-10,250,50,50);
+
 }
