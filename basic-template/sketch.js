@@ -13,6 +13,9 @@ createCanvas(500,500);
 }
 
 function draw() {
+
+  var horizontalCenter = width/2;
+
   background(127,255,212);
 
   //head
@@ -41,7 +44,7 @@ function draw() {
 
   //middle of nose
   fill(256,256,256);
-  rect(230,270,60,90);
+  rect(230,270,30,290);
 
   //mouth
   fill(256,256,256);
