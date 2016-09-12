@@ -10,11 +10,14 @@
 function setup() {
 
 createCanvas(500,500);
-background(127,255,212);
+ellipseMode(CENTER);
+ rectMode(CENTER);
 
 }
 
 function draw() {
+  background(127,255,212);
+
   //head
   noStroke();
   fill(250,240,230);
@@ -42,9 +45,8 @@ function draw() {
   //middle of nose
   fill(256,256,256);
   rect(230,270,60,90);
-  
+
   //mouth
   fill(256,256,256);
   ellipse(250,170,90,30);
-
 }
