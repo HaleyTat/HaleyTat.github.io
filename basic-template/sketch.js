@@ -10,9 +10,6 @@
 function setup() {
 
 createCanvas(500,500);
-ellipseMode(CENTER);
- rectMode(CENTER);
-
 }
 
 function draw() {
