@@ -30,11 +30,11 @@ function draw() {
 
   //eye 1
   fill(256,256,256);
-  ellipse(horizontalCenter-40,180,80,40);
+  ellipse(horizontalCenter-50,180,80,40);
 
   //eye 2
   fill(256,256,256);
-  ellipse(horizontalCenter+40,180,80,40);
+  ellipse(horizontalCenter+50,180,80,40);
 
   //sides of nose
   fill(256,256,256);
@@ -44,9 +44,9 @@ function draw() {
 
   //middle of nose
   fill(256,256,256);
-  rect(235,200,30,60);
+  rect(235,200,30,90);
 
   //mouth
   fill(256,256,256);
-  ellipse(250,320,90,30);
+  ellipse(250,300,90,30);
 }
