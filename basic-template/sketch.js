@@ -48,5 +48,5 @@ function draw() {
 
   //mouth
   fill(256,256,256);
-  ellipse(250,170,90,30);
+  ellipse(250,320,90,30);
 }
