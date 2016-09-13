@@ -58,6 +58,6 @@ function draw() {
 
 // line in middle of lips
   stroke(0);
-  line(250,310,340,310);
+  line(200,300,290,300);
 
 }
