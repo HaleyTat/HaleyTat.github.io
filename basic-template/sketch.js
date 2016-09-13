@@ -58,7 +58,11 @@ function draw() {
 
 // line in middle of lips
   stroke(0);
-  curve(205,300,295,360,385,400);
   line(205,300,295,300);
+
+// curve to upper lip
+noFill();
+stroke(0);
+curve(205,300,230,280,240,290,295,300);
 
 }
