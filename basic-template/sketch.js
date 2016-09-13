@@ -53,7 +53,7 @@ function draw() {
 
   // pupils
   fill(0,0,0);
-  ellipse(horizontalCenter+40,185,10,10);
-  ellipse(horizontalCenter-40,185,10,10);
+  ellipse(horizontalCenter+30,185,30,30);
+  ellipse(horizontalCenter-50,185,30,30);
 
 }
