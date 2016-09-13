@@ -61,7 +61,8 @@ function draw() {
   line(205,300,295,300);
 
 // line for bottom lip
+noFill();
 stroke(0);
-curve(105,300,215,330,275,330,405,300);
+curve(105,270,215,300,275,300,450,270);
 
 }
