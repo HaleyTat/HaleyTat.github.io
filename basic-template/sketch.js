@@ -53,11 +53,10 @@ function draw() {
 
   // pupils
   fill(0,0,0);
-  ellipse(horizontalCenter+30,185,30,30);
-  ellipse(horizontalCenter-70,185,30,30);
+  ellipse(horizontalCenter+30,180,30,30);
+  ellipse(horizontalCenter-70,180,30,30);
 
 // line in middle of lips
-  fill(0,0,0);
-  line(250,300,340,300);
+  line(500,30,100,140);
 
 }
