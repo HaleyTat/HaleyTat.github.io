@@ -49,12 +49,14 @@ function draw() {
 
   //mouth
   fill(256,256,256);
-  curve(10,20,30,300,300,40,200,200);
   ellipse(250,300,90,30);
 
   // pupils
   fill(0,0,0);
   ellipse(horizontalCenter+30,185,30,30);
   ellipse(horizontalCenter-50,185,30,30);
+
+// line in middle of lips
+line(250,300,340,300);
 
 }
