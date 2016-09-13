@@ -48,7 +48,7 @@ function draw() {
   rect(235,170,30,85);
 
   //mouth
-  fill(256,256,256);
+  fill(240,128,128);
   ellipse(250,300,90,30);
 
   // pupils
@@ -58,6 +58,7 @@ function draw() {
 
 // line in middle of lips
   stroke(0);
-  line(200,300,290,300);
+  curve(205,300,295,360,385,400);
+  line(205,300,295,300);
 
 }
