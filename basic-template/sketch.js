@@ -63,6 +63,6 @@ function draw() {
 // curve to upper lip
 noFill();
 stroke(0);
-curve(205,300,230,280,240,290,295,300);
+curve(175,310,235,240,265,310,295,310);
 
 }
