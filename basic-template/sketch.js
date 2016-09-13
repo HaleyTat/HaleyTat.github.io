@@ -49,6 +49,7 @@ function draw() {
 
   //mouth
   fill(256,256,256);
+  curve(10,20,30,300,300,40,200,200);
   ellipse(250,300,90,30);
 
   // pupils
