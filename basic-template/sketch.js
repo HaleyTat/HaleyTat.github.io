@@ -30,7 +30,7 @@ function draw() {
 
   //eye 1
   fill(256,256,256);
-  ellipse(horizontalCenter-70,180,80,40);
+  ellipse(horizontalCenter-50,180,80,40);
 
   //eye 2
   fill(256,256,256);
@@ -54,10 +54,10 @@ function draw() {
   // pupils
   fill(0,0,0);
   ellipse(horizontalCenter+30,185,30,30);
-  ellipse(horizontalCenter-50,185,30,30);
+  ellipse(horizontalCenter-70,185,30,30);
 
 // line in middle of lips
-fill(0,0,0);
-line(250,300,340,300);
+  fill(0,0,0);
+  line(250,300,340,300);
 
 }
