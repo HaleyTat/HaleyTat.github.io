@@ -38,13 +38,13 @@ function draw() {
 
   //sides of nose
   fill(256,256,256);
-  ellipse(270,250,50,50);
-  ellipse(230,250,40,50);
-  ellipse(250,250,40,60);
+  ellipse(270,250,40,40);
+  ellipse(230,250,30,30);
+  ellipse(250,250,30,30);
 
   //middle of nose
   fill(256,256,256);
-  rect(235,200,30,90);
+  rect(235,200,30,70);
 
   //mouth
   fill(256,256,256);
