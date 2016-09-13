@@ -20,12 +20,12 @@ function draw() {
 
   //head
   noStroke();
-  fill(250,240,230);
+  fill(245,222,179);
   ellipse(250, 200, 290, 340);
 
   //neck
   noStroke();
-  fill(250,240,230);
+  fill(245,222,179);
   rect(175,250,150,200);
 
   //eye 1
@@ -43,7 +43,7 @@ function draw() {
   ellipse(250,250,50,50);
 
   //middle of nose
-  fill(256,256,256);
+  fill(250,240,230);
   rect(235,200,30,70);
 
   //mouth
