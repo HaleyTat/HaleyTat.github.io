@@ -40,7 +40,7 @@ function draw() {
   fill(256,256,256);
   ellipse(270,250,30,30);
   ellipse(230,250,30,30);
-  ellipse(250,250,40,40);
+  ellipse(250,250,50,50);
 
   //middle of nose
   fill(256,256,256);
