@@ -57,6 +57,7 @@ function draw() {
   ellipse(horizontalCenter-70,180,30,30);
 
 // line in middle of lips
+  stroke(0);
   line(500,30,100,140);
 
 }
