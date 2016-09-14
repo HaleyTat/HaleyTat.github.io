@@ -22,6 +22,6 @@ function draw() {
 
   noStroke();
   fill(135,206,235);
-  arc(200,400,50,50,90,mouseY,OPEN);
+  arc(200,mouseY,50,50,90,340,OPEN);
 
 }
