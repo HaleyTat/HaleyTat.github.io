@@ -18,6 +18,11 @@ function draw() {
 
   background(127,255,212);
 
+// ear 1
+stroke(255,218,185);
+fill(255,218,185);
+arc(380,190,100,80,350,360);
+
   //head
   noStroke();
   fill(255,228,196);
@@ -27,6 +32,14 @@ function draw() {
   noStroke();
   fill(255,228,196);
   rect(175,250,150,200);
+
+  // eyelid 1
+  fill(255,218,185);
+  ellipse(horizontalCenter-50,170,80,40);
+
+  // eyelid 2
+  fill(255,218,185);
+  ellipse(horizontalCenter+50,170,80,40);
 
   //eye 1
   fill(256,256,256);
@@ -64,9 +77,5 @@ function draw() {
 // noFill();
 // stroke(0);
 // curve(-5,275,105,310,250,310,350,275);
-
-stroke(255,218,185);
-fill(255,218,185);
-arc(400,190,100,80,350,360);
 
 }
