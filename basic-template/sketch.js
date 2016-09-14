@@ -93,7 +93,7 @@ arc(120,190,100,80,360,350);
 // cheek 1
 noStroke();
 fill(255,255,255);
-arc(250, 260, 90, 90, HALF_PI, PI);
+arc(230, 245, 150, 160, HALF_PI, PI);
 
 // line for bottom lip
 // noFill();
