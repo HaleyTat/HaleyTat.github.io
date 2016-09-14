@@ -2,11 +2,6 @@
 
 //description: self-portrait
 
-//fill(256,256,256);
-//ellipse(horizontalCenter-10,180,80,40);
-//fill(256,256,256);
-//ellipse(horizontalCenter,180,80,40);
-
 function setup() {
 
 createCanvas(500,500);
@@ -88,8 +83,6 @@ arc(120,190,100,80,360,350);
   stroke(0);
   line(205,300,295,300);
 
-  // bangs
-
 // cheek 1
 noStroke();
 fill(250,240,230);
@@ -105,17 +98,9 @@ stroke(0);
 fill(165,42,42);
 arc(250, 140, 275, 235, PI, TWO_PI);
 
-// curve(30,600,100,300,200,200,700,900);
-
 // chin
 noStroke();
 fill(250,240,230);
 ellipse(horizontalCenter,340,60,50);
-
-
-// line for bottom lip
-// noFill();
-// stroke(0);
-// curve(-5,275,105,310,250,310,350,275);
 
 }
