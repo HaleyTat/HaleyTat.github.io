@@ -19,7 +19,7 @@ function draw() {
   background(127,255,212);
 
 // hair
-stroke(255,218,185);
+noStroke();
 fill(165,42,42);
 arc(240,230,400,400,360,350);
 
@@ -89,11 +89,11 @@ arc(120,190,100,80,360,350);
   line(205,300,295,300);
 
   // bangs
-fill(0);
-arc(250,130,200,150,0,QUARTER_PI+PI,CHORD);
 
+// cheek 1
+noStroke();
 fill(255,255,255);
-arc(50, 55, 60, 60, HALF_PI, PI);
+arc(250, 260, 90, 90, HALF_PI, PI);
 
 // line for bottom lip
 // noFill();
