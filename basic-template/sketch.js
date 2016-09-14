@@ -103,13 +103,12 @@ arc(300, 215, 140, 160, 0, HALF_PI);
 // bangs
 stroke(0);
 fill(0);
-// curve(0,250,250,120,350,110,500,250);
-curve(0,250,350,500);
+curve(0,350,350,120,500,110,700,350);
 
 // chin
 noStroke();
 fill(250,240,230);
-ellipse(horizontalCenter,380,80,70);
+ellipse(horizontalCenter,360,60,50);
 
 
 // line for bottom lip
