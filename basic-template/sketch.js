@@ -24,7 +24,7 @@ fill(165,42,42);
 arc(240,230,400,400,360,350);
 
 // right side of hair
-stroke(255,218,185);
+noStroke();
 fill(165,42,42);
 arc(285,230,400,400,350,360);
 
@@ -98,7 +98,12 @@ arc(200, 215, 140, 160, HALF_PI, PI);
 // cheek 2
 noStroke();
 fill(250,240,230);
-arc(330, 215, 140, 160, 0, HALF_PI);
+arc(290, 215, 140, 160, 0, HALF_PI);
+
+// bangs
+stroke(165,42,42);
+fill(165,42,42);
+curveVertex(100,250);
 
 // line for bottom lip
 // noFill();
