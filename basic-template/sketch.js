@@ -26,7 +26,7 @@ arc(240,230,400,400,360,350);
 // right side of hair
 stroke(255,218,185);
 fill(165,42,42);
-arc(325,230,400,400,350,360);
+arc(285,230,400,400,350,360);
 
 // ear 1
 stroke(255,218,185);
@@ -87,6 +87,10 @@ arc(120,190,100,80,360,350);
 // line in middle of lips
   stroke(0);
   line(205,300,295,300);
+
+  // bangs
+fill(0);
+arc(250,130,80,80,0,PI+QUARTER_PI,CHORD);
 
 // line for bottom lip
 // noFill();
