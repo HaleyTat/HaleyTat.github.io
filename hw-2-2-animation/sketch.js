@@ -17,6 +17,6 @@ background(255,182,193);
 function draw() {
   noStroke();
   fill(135,206,235);
-  rect(200,150,80,40);
+  rect(mouseX,150,80,40);
 
 }
