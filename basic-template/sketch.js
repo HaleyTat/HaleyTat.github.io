@@ -92,6 +92,9 @@ arc(120,190,100,80,360,350);
 fill(0);
 arc(250,130,200,150,0,QUARTER_PI+PI,CHORD);
 
+fill(255,255,255);
+arc(50, 55, 60, 60, HALF_PI, PI);
+
 // line for bottom lip
 // noFill();
 // stroke(0);
