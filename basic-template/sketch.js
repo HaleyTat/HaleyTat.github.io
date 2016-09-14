@@ -98,12 +98,12 @@ arc(200, 215, 140, 160, HALF_PI, PI);
 // cheek 2
 noStroke();
 fill(250,240,230);
-arc(290, 215, 140, 160, 0, HALF_PI);
+arc(300, 215, 140, 160, 0, HALF_PI);
 
 // bangs
 stroke(165,42,42);
-fill(165,42,42);
-curveVertex(100,250);
+fill(0);
+curve(150,250,250,130,300,120,420,250);
 
 // line for bottom lip
 // noFill();
