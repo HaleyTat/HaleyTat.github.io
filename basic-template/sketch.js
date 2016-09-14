@@ -103,7 +103,7 @@ arc(300, 215, 140, 160, 0, HALF_PI);
 // bangs
 stroke(0);
 fill(0);
-arc(50, 55, 80, 80, PI+QUARTER_PI, TWO_PI);
+arc(200, 150, 200, 100, HALF_PI, TWO_PI);
 
 // curve(30,600,100,300,200,200,700,900);
 
