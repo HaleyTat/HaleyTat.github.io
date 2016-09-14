@@ -103,7 +103,7 @@ arc(300, 215, 140, 160, 0, HALF_PI);
 // bangs
 stroke(0);
 fill(0);
-curve(0,350,350,120,500,110,700,350);
+curve(horizontalCenter,350,350,120,500,110,600,350);
 
 // chin
 noStroke();
