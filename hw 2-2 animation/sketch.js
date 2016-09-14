@@ -2,8 +2,8 @@
 
 //description: self-portrait
 
-function preload() {
-  img = loadImage(,"gifcombo2");
+ function preload() {
+ img = loadImage("gifcombo2");
 
 }
 
