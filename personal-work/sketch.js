@@ -2,8 +2,8 @@
 
 // expressionistic code drawing
 
- var horizontalCenter=width/2;
- var verticalCenter=height/2;
+ var horizontalCenter= width/2;
+ var verticalCenter= height/2;
 
 function setup() {
 
