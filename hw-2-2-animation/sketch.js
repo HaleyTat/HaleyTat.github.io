@@ -27,9 +27,9 @@ function draw() {
   fill(135,206,235);
   arc(200,mouseY,50,50,90,340,OPEN);
 
-  noStroke();
-  fill((135,206,235);
-  ellipse(diameter,horizontalCenter,70,70);
+  // noStroke();
+  // fill((135,206,235);
+  // ellipse(diameter,horizontalCenter,70,70);
 
 
 }
