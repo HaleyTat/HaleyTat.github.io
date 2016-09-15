@@ -3,6 +3,7 @@
 // expressionistic code drawing
 
 var horizontalCenter=400;
+var circleY=0;
 
 function setup() {
 
@@ -13,6 +14,7 @@ background(255,248,220);
 function draw() {
  noStroke();
  fill(255,255,0);
- ellipse(horizontalCenter,600,100,100);
+ ellipse(horizontalCenter,circleY,100,100);
 
+ circleY=circleY+10;
 }
