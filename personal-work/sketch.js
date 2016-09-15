@@ -7,7 +7,7 @@
 
 function setup() {
 
-createCanvas("windowWidth","windowHeighth");
+createCanvas(1080,1080);
 background(255,248,220);
 }
 
