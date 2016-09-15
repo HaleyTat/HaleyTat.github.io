@@ -1,35 +1,19 @@
-//homework 2.2
+// personal work
 
-// description: animation
+// expressionistic code drawing
 
- // function preload() {
- // img = loadImage("gifcombo2");
-
-// }
-
-// var horizontalCenter= width/2
-// var diameter= 100
+var horizontalCenter=width/2;
+var verticalCenter=height/2;
 
 function setup() {
 
-createCanvas(500,500);
-
+createCanvas(windowWidth,windowHeighth);
+background(255,248,220);
 }
 
 function draw() {
-  background(255,182,193);
-
   noStroke();
-  fill(135,206,235);
-  rect(mouseX,150,80,40);
-
-  noStroke();
-  fill(135,206,235);
-  arc(200,mouseY,50,50,90,340,OPEN);
-
-  noStroke();
-  fill((135,206,235);
-  ellipse(diameter,horizontalCenter,70,70);
-
+  fill(255,255,0);
+  arc(horizontalCenter,verticalCenter,200,400,HALFPI_TWOPI,OPEN);
 
 }
