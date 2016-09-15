@@ -2,8 +2,7 @@
 
 // expressionistic code drawing
 
- var horizontalCenter= width/2;
- var verticalCenter= height/2;
+var horizontalCenter=width/2;
 
 function setup() {
 
@@ -14,6 +13,6 @@ background(255,248,220);
 function draw() {
  noStroke();
  fill(255,255,0);
- ellipse(horizontalCenter,verticalCenter,300,500);
+ ellipse(horizontalCenter,700,100,100);
 
 }
