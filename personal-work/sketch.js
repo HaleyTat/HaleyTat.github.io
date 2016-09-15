@@ -16,5 +16,6 @@ function draw() {
  fill(255,255,0);
  ellipse(horizontalCenter,circleY,100,100);
 
- circleY=circleY+10;
+circleY=circleY+10;
+
 }
