@@ -4,6 +4,7 @@
 
 var horizontalCenter=400;
 var circleY=0;
+var circleYY=0;
 
 function setup() {
 
@@ -16,6 +17,11 @@ function draw() {
  fill(255,255,0);
  ellipse(horizontalCenter,circleY,100,100);
 
-circleY=circleY+10;
+ noStroke();
+ fill(255,255,0);
+ ellipse(100,circleYY,100,100);
 
+circleY=circleY+1;
+
+circleYY=circleYY+1;
 }
