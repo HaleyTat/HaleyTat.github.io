@@ -2,7 +2,7 @@
 
 // expressionistic code drawing
 
-var horizontalCenter=400
+var horizontalCenter=400;
 
 function setup() {
 
