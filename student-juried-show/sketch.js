@@ -1,8 +1,6 @@
 // student juried show
 
-// expressionistic code artwork
-
-var goldColor=(255,215,0);
+// minimalist code artwork
 
 function setup() {
 
@@ -14,6 +12,9 @@ function draw() {
 stroke(255,215,0);
 line(0,300,800,300);
 
-stroke(goldColor);
+stroke(255,215,0);
 line(0,400,800,400);
+
+stroke(255,215,0);
+line(0,200,800,200);
 }
