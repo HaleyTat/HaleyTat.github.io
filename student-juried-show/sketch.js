@@ -5,7 +5,7 @@
 function setup() {
 
 createCanvas(800,800);
-background(175,238,238);
+background(224,255,255);
 }
 
 function draw() {
