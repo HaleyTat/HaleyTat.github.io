@@ -9,8 +9,13 @@ background(255,248,220);
 }
 
 function draw() {
-stroke(0);
+noStroke();
 fill(238,232,170);
-arc(300,350,300,500,180,360);
+arc(400,350,430,550,270,360);
+
+
+noStroke();
+fill(255,255,255);
+ellipse(400,300,30,70);
 
 }
