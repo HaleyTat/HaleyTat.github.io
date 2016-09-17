@@ -9,6 +9,7 @@ background(135,206,250);
 }
 
 function draw() {
+  
 // line 1
   stroke(255,250,205);
   line(0,200,800,200);
