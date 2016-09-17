@@ -1,6 +1,6 @@
 // student juried show
 
-// minimalist code artwork
+// minimalist code artwork 2
 
 function setup() {
 
@@ -38,29 +38,26 @@ stroke(255,250,205);
 line(0,350,800,350);
 // line 10
 stroke(255,250,205);
-line(0,356,800,356);
+line(0,362,800,362);
 // line 11
 stroke(255,250,205);
-line(0,362,800,362);
+line(0,375,800,375);
 // line 12
 stroke(255,250,205);
-line(0,369,800,369);
+line(0,387,800,387);
 // line 13
 stroke(255,250,205);
-line(0,375,800,375);
+line(0,393,800,393);
 // line 14
 stroke(255,250,205);
-line(0,387,800,387);
+line(0,400,800,400);
 // line 15
 stroke(255,250,205);
-line(0,400,800,400);
+line(0,425,800,425);
 // line 16
 stroke(255,250,205);
-line(0,425,800,425);
-// line 17
-stroke(255,250,205);
 line(0,450,800,450);
-// line 18
+// line 17
 stroke(255,250,205);
 line(0,475,800,475);
 }
