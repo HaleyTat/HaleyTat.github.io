@@ -9,8 +9,7 @@ background(135,206,250);
 }
 
 function draw() {
-noStroke();
-fill(255,215,0);
+stroke(255,215,0);
 line(0,300,800,300);
 
 }
