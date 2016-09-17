@@ -11,7 +11,7 @@ background(255,248,220);
 function draw() {
 noStroke();
 fill(238,232,170);
-arc(400,350,430,550,270,360);
+arc(400,350,490,550,70,360);
 
 
 noStroke();
