@@ -9,6 +9,7 @@
 
 // var horizontalCenter= width/2
 // var diameter= 100
+var xValue=random(0,500)
 
 function setup() {
 
@@ -26,6 +27,10 @@ function draw() {
   noStroke();
   fill(135,206,235);
   arc(200,mouseY,50,50,90,340,OPEN);
+
+  noStroke();
+  fill(135,206,235);
+  ellipse(xValue,300,50,50);
 
   // noStroke();
   // fill((135,206,235);
