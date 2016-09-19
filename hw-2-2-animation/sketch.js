@@ -6,11 +6,12 @@
 // var diameter= 100
 
 var yellow=255
+var x=random(0,400);
 
 function setup() {
 
 createCanvas(500,500);
-255,182,193
+frameRate(24);
 }
 
 function draw() {
