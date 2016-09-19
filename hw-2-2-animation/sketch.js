@@ -11,7 +11,7 @@ var x=random(0,400);
 function setup() {
 
 createCanvas(500,500);
-frameRate(24);
+// frameRate(24);
 }
 
 function draw() {
