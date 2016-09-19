@@ -14,7 +14,7 @@ var spot={
 function setup() {
 
 createCanvas(500,500);
-frameRate(20);
+frameRate(24);
 }
 
 function draw() {
@@ -29,10 +29,10 @@ function draw() {
   noStroke();
   fill(135,206,235);
   ellipse(250,mouseY,50,50);
-
+// moving circles
+frameRate(20);
   spot.x=random(0,width);
   spot.y=random(0,height);
-  // yellow=random(0,255);
   fill(135,206,235,100);
   ellipse(spot.x,spot.y,30,30);
 
