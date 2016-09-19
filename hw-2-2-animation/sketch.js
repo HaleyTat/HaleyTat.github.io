@@ -34,8 +34,8 @@ function draw() {
 noStroke();
 fill(135,206,235);
 rect(rctl,50,50,50);
-var rctl=rct+1;
 // circle up and down
+var rctl=rct+1
   noStroke();
   fill(135,206,235);
   rect(100,mouseY,10,150);
@@ -45,6 +45,5 @@ frameRate(20);
   spot.y=random(0,height);
   fill(135,206,235,100);
   rect(spot.x,spot.y,60,30);
-
 
 }
