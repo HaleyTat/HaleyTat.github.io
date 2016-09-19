@@ -8,14 +8,13 @@
 var yellow=255
 var spot={
   x:50,
-  y:100,
-  b:0
+  y:100
 };
 
 function setup() {
 
 createCanvas(500,500);
-// frameRate(24);
+frameRate(24);
 }
 
 function draw() {
