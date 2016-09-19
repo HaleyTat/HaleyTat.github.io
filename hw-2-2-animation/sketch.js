@@ -8,6 +8,7 @@
 var bleColor=255;
 var grn=255;
 var rct=0;
+var rctl=rct+1;
 var spot={
   x:50,
   y:100
@@ -28,6 +29,11 @@ function draw() {
   rect(mouseX,150,80,40);
   rect(mouseX,250,80,40);
   rect(mouseX,350,80,40);
+//moving square
+noStroke();
+fill(135,206,235);
+rect(rctl,50,50,50);
+var rctl=rct+1;
 // circle up and down
   noStroke();
   fill(135,206,235);
@@ -38,12 +44,6 @@ frameRate(20);
   spot.y=random(0,height);
   fill(135,206,235,100);
   rect(spot.x,spot.y,60,30);
-//moving square
-rect(rctl,50,50,50);
-var rctl=rct+1;
-  // noStroke();
-  // fill((135,206,235);
-  // ellipse(diameter,horizontalCenter,70,70);
 
 
 }
