@@ -20,7 +20,7 @@ createCanvas(500,500);
 
 function draw() {
   // screen changes color from right to left
-  var yellow=map(mouseX,0,500,0,255);
+  var blColorchange=map(mouseX,0,500,0,bleColor);
   background(0,0,bleColor);
 // rect side to side
   noStroke();
