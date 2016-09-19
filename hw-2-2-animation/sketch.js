@@ -23,7 +23,7 @@ function draw() {
 
   noStroke();
   fill(135,206,235);
-  ellipse(mouseX,300,50,50);
+  ellipse(250,mouseY,50,50);
 
   // noStroke();
   // fill((135,206,235);
