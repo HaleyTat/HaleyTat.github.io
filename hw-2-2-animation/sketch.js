@@ -5,7 +5,7 @@
 // var horizontalCenter= width/2
 // var diameter= 100
 
-var yellow=255
+var blue=255
 var spot={
   x:50,
   y:100
@@ -19,7 +19,7 @@ createCanvas(500,500);
 function draw() {
   // screen changes color from right to left
   var yellow=map(mouseX,0,500,0,255);
-  background(255,yellow,0);
+  background(0,yellow,0);
 // rect side to side
   noStroke();
   fill(135,206,235);
