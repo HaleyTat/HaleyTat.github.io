@@ -5,7 +5,9 @@
 // var horizontalCenter= width/2
 // var diameter= 100
 
-var blue=255
+var bleColor=255;
+var grn=255;
+
 var spot={
   x:50,
   y:100
@@ -21,7 +23,7 @@ ellipse(mouseX,200,40,40);
 function draw() {
   // screen changes color from right to left
   var yellow=map(mouseX,0,500,0,255);
-  background(0,yellow,0);
+  background(0,grn,bleColor);
 // rect side to side
   noStroke();
   fill(135,206,235);
