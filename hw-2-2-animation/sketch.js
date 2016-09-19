@@ -7,7 +7,7 @@
 
 var bleColor=255;
 var grn=255;
-
+var rct=0;
 var spot={
   x:50,
   y:100
@@ -32,13 +32,15 @@ function draw() {
   noStroke();
   fill(135,206,235);
   rect(100,mouseY,10,150);
-// moving circles
+// moving rectangles
 frameRate(20);
   spot.x=random(0,width);
   spot.y=random(0,height);
   fill(135,206,235,100);
   rect(spot.x,spot.y,60,30);
-
+//moving square
+rect(rctl,50,50,50);
+var rctl=rct+1;
   // noStroke();
   // fill((135,206,235);
   // ellipse(diameter,horizontalCenter,70,70);
