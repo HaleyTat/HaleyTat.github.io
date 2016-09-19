@@ -33,7 +33,9 @@ function draw() {
 
   spot.x=random(0,width);
   spot.y=random(0,height);
-  yellow=random(0,255);
+  // yellow=random(0,255);
+  fill(135,206,235,100);
+  ellipse(spot.x,spot.y,30,30);
 
   // noStroke();
   // fill((135,206,235);
