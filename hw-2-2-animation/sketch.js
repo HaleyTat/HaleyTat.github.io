@@ -5,6 +5,8 @@
 // var horizontalCenter= width/2
 // var diameter= 100
 
+var yellow=255
+
 function setup() {
 
 createCanvas(500,500);
@@ -12,8 +14,8 @@ createCanvas(500,500);
 }
 
 function draw() {
-  var col=map(mouseX,0,500,0,255);
-  background(col);
+  var yellow=map(mouseX,0,500,0,255);
+  background(255,yellow,0);
 
   noStroke();
   fill(135,206,235);
@@ -21,7 +23,7 @@ function draw() {
 
   noStroke();
   fill(135,206,235);
-  ellipse(xValue,300,50,50);
+  ellipse(mouseX,300,50,50);
 
   // noStroke();
   // fill((135,206,235);
