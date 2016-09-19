@@ -14,6 +14,8 @@ var spot={
 function setup() {
 
 createCanvas(500,500);
+fill(0);
+ellipse(200,200,40,40);
 }
 
 function draw() {
