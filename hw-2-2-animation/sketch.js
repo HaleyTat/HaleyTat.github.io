@@ -14,7 +14,6 @@ var spot={
 function setup() {
 
 createCanvas(500,500);
-frameRate(24);
 }
 
 function draw() {
