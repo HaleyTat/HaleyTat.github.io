@@ -23,7 +23,8 @@ function draw() {
   // screen changes color from right to left
   var bl=map(mouseX,0,500,0,255);
   var rd=map(mouseX,0,500,255,0);
-  var rctl=rctl+1
+  var rct=0;
+  var rctl=rct+1;
   background(0,0,bleColor);
 // rect side to side
   noStroke();
