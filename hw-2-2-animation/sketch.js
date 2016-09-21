@@ -7,8 +7,8 @@
 
 var bleColor=255;
 var grn=255;
-var rct=0;
-var rct=rct+1;
+var rectangleX=0;
+var rectangleX=rectangleX+1;
 var spot={
   x:50,
   y:100
@@ -23,8 +23,8 @@ function draw() {
   // screen changes color from right to left
   var bl=map(mouseX,0,500,0,255);
   var rd=map(mouseX,0,500,255,0);
-  var rct=0;
-  var rct=rct+1;
+  var rectangleX=0;
+  var rectangleX=rectangleX+1;
   background(0,0,bleColor);
 // rect side to side
   noStroke();
@@ -35,7 +35,7 @@ function draw() {
 //moving square
 noStroke();
 fill(135,206,235);
-rect(rct,50,50,50);
+rect(rectangleX,50,50,50);
 // circle up and down
   noStroke();
   fill(135,206,235);
