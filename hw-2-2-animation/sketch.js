@@ -2,13 +2,9 @@
 
 // description: animation
 
-// var horizontalCenter= width/2
-// var diameter= 100
-
 var bleColor=255;
 var grn=255;
 var rectangleX=0;
-// rectangleX=rectangleX+1;
 var spot={
   x:50,
   y:100
@@ -35,7 +31,6 @@ function draw() {
 noStroke();
 fill(135,206,235);
 rect(rectangleX,50,50,50);
-// rectangleX=rectangleX+1;
 // circle up and down
   noStroke();
   fill(135,206,235);
