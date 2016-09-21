@@ -23,6 +23,7 @@ function draw() {
   // screen changes color from right to left
   var bl=map(mouseX,0,500,0,255);
   var rd=map(mouseX,0,500,255,0);
+  var rctl=rctl+1
   background(0,0,bleColor);
 // rect side to side
   noStroke();
@@ -35,7 +36,6 @@ noStroke();
 fill(135,206,235);
 rect(rctl,50,50,50);
 // circle up and down
-var rctl=rct+1
   noStroke();
   fill(135,206,235);
   rect(100,mouseY,10,150);
