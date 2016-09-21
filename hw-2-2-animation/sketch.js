@@ -36,7 +36,7 @@ function draw() {
 noStroke();
 fill(135,206,235);
 rect(rectangleX,50,50,50);
-rectangleX=rectangleX+1
+rectangleX=rectangleX+1;
 // circle up and down
   noStroke();
   fill(135,206,235);
