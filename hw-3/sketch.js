@@ -1,8 +1,8 @@
 // hw-3
 
 // conditional statement hw
-// var begin=0;
-// var rectangleGrow=begin+10;
+ var begin=0;
+ var rectangleGrow=begin+10;
 
 function setup() {
 
@@ -17,15 +17,14 @@ function draw() {
 // } else {
   // text("false",100,100);
 // }
-  // rect(300,300,250,175);
   if (mouseY>=400) {
     fill(0,0,255);
   } else {
-    fill(255,0,255,100);
+    fill(0,255,255,100);
   }
   rect(300,300,250,175);
-  // if (mousePressed()) {
-    // rect(rectangleGrow,100,250,175);
+  if (mousePressed()) {
+   rect(rectangleGrow,100,250,175);
   // }
   // rect(300,300,250,175);
 }
