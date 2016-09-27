@@ -13,7 +13,7 @@ function draw() {
   fill(0,0,255);
   noStroke();
   rect(circleMove,300,250,150);
-  circleMove=circleMove+10;
+  circleMove++;
 // if (mouseY>=300) {
   //  fill(0);
  // } else {
