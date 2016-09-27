@@ -1,6 +1,7 @@
 // hw-3
 
 // conditional statement hw
+var circleMove=0;
 
 function setup() {
 
@@ -9,7 +10,7 @@ background(135,206,250);
 }
 
 function draw() {
-  var circleMove=0;
+  fill(0);
   rect(circleMove,300,250,150);
   circleMove=circleMove+10;
 // if (mouseY>=300) {
