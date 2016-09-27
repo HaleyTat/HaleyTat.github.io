@@ -13,6 +13,7 @@ background(135,206,250);
 function draw() {
   // if (mouseY>=400) {
     // fill(0,0,255);
+    fill(0);
     rect(300,200,200,150);
   // } else {
     // fill(0,255,255,100);
