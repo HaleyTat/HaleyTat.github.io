@@ -5,10 +5,10 @@
 function setup() {
 
 createCanvas(800,800);
-background(135,206,250);
 }
 
 function draw() {
+  background(135,206,250);
   var speed=3;
   var x=0;
   // fill(0,0,255);
