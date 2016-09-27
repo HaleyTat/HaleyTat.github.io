@@ -2,23 +2,23 @@
 
 // conditional statement hw
 // var circleMove=0;
+var speed=3;
+
 function setup() {
 createCanvas(800,800);
 }
 
 function draw() {
-  var speed=3;
-  var x=0;
   background(135,206,250);
   // fill(0,0,255);
   // noStroke();
   // rect(circleMove,300,250,150);
   // circleMove++;
+noStroke();
 fill(0);
 ellipse(x,200,100,100);
 
 if (x>width || x<0) {
-  ellipse(x,300,80,80);
   speed=speed*-1;
 }
 x=x+speed;
