@@ -11,7 +11,7 @@ background(135,206,250);
 function draw() {
   var strt=0;
   rect(strt,300,250,150);
-  strt=strt+10;
+  strt++;
 // if (mouseY>=300) {
   //  fill(0);
  // } else {
