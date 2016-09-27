@@ -2,7 +2,7 @@
 
 // conditional statement hw
 // var circleMove=0;
-var speed=3
+var speed=-3
 x=1
 function setup() {
 
@@ -15,6 +15,9 @@ function draw() {
   // noStroke();
   // rect(circleMove,300,250,150);
   // circleMove++;
+fill(255);
+ellipse(x,200,100,100);
+
 if (x>width) {
   ellipse(x,300,80,80);
   x=x*speed;
