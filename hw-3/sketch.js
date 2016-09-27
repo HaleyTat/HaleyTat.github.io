@@ -9,9 +9,9 @@ background(135,206,250);
 }
 
 function draw() {
-  var strt=0;
-  rect(strt,300,250,150);
-  strt++;
+  var circleMove=0;
+  rect(circleMove,300,250,150);
+  circleMove=circleMove+10;
 // if (mouseY>=300) {
   //  fill(0);
  // } else {
