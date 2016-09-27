@@ -11,6 +11,7 @@ background(135,206,250);
 }
 
 function draw() {
+  rect(300,300,250,175);
   if (mouseY>=400) {
     fill(0,0,255);
   } else if (mousePressed()) {
