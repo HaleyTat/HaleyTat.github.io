@@ -7,10 +7,10 @@ var x=0;
 function setup() {
 
 createCanvas(800,800);
+background(135,206,250);
 }
 
 function draw() {
- background(135,206,250);
   // fill(0,0,255);
   // noStroke();
   // rect(circleMove,300,250,150);
