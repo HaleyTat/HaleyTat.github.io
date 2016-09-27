@@ -16,12 +16,12 @@ function draw() {
   // circleMove++;
 noStroke();
 fill(0);
-ellipse(x,200,100,100);
+ellipse(300,200,100,100);
 
-if (x>width || x<0) {
-  speed=speed*-1;
-}
-x=x+speed;
+// if (x>width || x<0) {
+  // speed=speed*-1;
+// }
+// x=x+speed;
  // else {
   // ellipse(x,b,b,d)
 }
