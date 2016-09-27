@@ -26,12 +26,12 @@ function draw() {
   // ellipse(x,b,b,d)
 // }
 
-// if (mouseY>=300) {
-  //  fill(0);
- // } else {
-  // fill(255);
-// }
-// rect(300,300,250,150);
+ if (mouseY>=300) {
+    fill(0);
+  } else {
+   fill(255);
+ }
+ rect(300,300,250,150);
 }
 // else if (mousePressed()) {
   //  rect(begin,100,250,175);
