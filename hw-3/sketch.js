@@ -1,19 +1,28 @@
 // hw-3
 
 // conditional statement hw
-var circleMove=0;
-
+// var circleMove=0;
+var speed=3
+x=1
 function setup() {
 
 createCanvas(800,800);
 }
 
 function draw() {
-  background(135,206,250);
-  fill(0,0,255);
-  noStroke();
-  rect(circleMove,300,250,150);
-  circleMove++;
+  // background(135,206,250);
+  // fill(0,0,255);
+  // noStroke();
+  // rect(circleMove,300,250,150);
+  // circleMove++;
+if (x>width) {
+  ellipse(x,300,80,80);
+  x=x*speed;
+}
+ // else {
+  // ellipse(x,b,b,d)
+}
+
 // if (mouseY>=300) {
   //  fill(0);
  // } else {
