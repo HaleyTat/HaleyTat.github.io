@@ -24,7 +24,7 @@ ellipse(300,200,100,100);
 // x=x+speed;
  // else {
   // ellipse(x,b,b,d)
-}
+// }
 
 // if (mouseY>=300) {
   //  fill(0);
