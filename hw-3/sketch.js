@@ -16,7 +16,7 @@ function draw() {
   }
   // else if (mousePressed()) {
     //  rect(begin,100,250,175);
-  }else {
+  } else {
     fill(0,255,255,100);
   }
   rect(300,300,250,175);
