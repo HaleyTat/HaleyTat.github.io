@@ -18,7 +18,7 @@ if (mouseY>=300) {
   fill(255);
   rect(300,200,200,150);
 }
-  // rect(300,300,250,175);
+rect(300,300,250,150);
 }
 // else if (mousePressed()) {
   //  rect(begin,100,250,175);
