@@ -3,19 +3,18 @@
 // conditional statement hw
 // var circleMove=0;
 function setup() {
-
 createCanvas(800,800);
 }
 
 function draw() {
-  background(135,206,250);
   var speed=3;
   var x=0;
+  background(135,206,250);
   // fill(0,0,255);
   // noStroke();
   // rect(circleMove,300,250,150);
   // circleMove++;
-fill(255);
+fill(0);
 ellipse(x,200,100,100);
 
 if (x>width || x<0) {
