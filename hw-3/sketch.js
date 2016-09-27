@@ -12,6 +12,7 @@ function draw() {
   var strt=0;
   strt=strt+10;
   rect(strt,300,250,150);
+  strt++
 // if (mouseY>=300) {
   //  fill(0);
  // } else {
