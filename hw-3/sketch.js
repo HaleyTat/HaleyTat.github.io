@@ -11,6 +11,7 @@ background(135,206,250);
 
 function draw() {
   fill(0);
+  noStroke();
   rect(circleMove,300,250,150);
   circleMove=circleMove+10;
 // if (mouseY>=300) {
