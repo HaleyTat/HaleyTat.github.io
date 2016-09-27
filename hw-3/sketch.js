@@ -1,7 +1,7 @@
-// hw-3
+// homework 4.2
 
 // conditional statement hw
-// var circleMove=0;
+var circleMove=0;
 // var speed=3;
 
 function setup() {
@@ -10,13 +10,13 @@ createCanvas(800,800);
 
 function draw() {
   background(135,206,250);
-  // fill(0,0,255);
-  // noStroke();
-  // rect(circleMove,300,250,150);
-  // circleMove++;
-noStroke();
-fill(0);
-ellipse(300,200,100,100);
+   fill(0,0,255);
+   noStroke();
+   rect(circleMove,300,250,150);
+   circleMove++;
+// noStroke();
+// fill(0);
+// ellipse(300,200,100,100);
 
 // if (x>width || x<0) {
   // speed=speed*-1;
