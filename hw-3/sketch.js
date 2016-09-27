@@ -2,7 +2,7 @@
 
 // conditional statement hw
 // var circleMove=0;
-var speed=3;
+// var speed=3;
 
 function setup() {
 createCanvas(800,800);
