@@ -1,7 +1,7 @@
 // homework 4.2
 
 // conditional statement hw
-var circleMove=0;
+var rectMove=0;
 
 function setup() {
 createCanvas(800,800);
@@ -12,8 +12,8 @@ function draw() {
   // moving retcangle fom left to right
    fill(0,0,255);
    noStroke();
-   rect(circleMove,300,250,150);
-   circleMove++;
+   rect(rectMove,300,250,150);
+   rectMove++;
 
 // button which changes from black to white
  if (mouseY>=300) {
