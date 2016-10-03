@@ -16,6 +16,7 @@ function draw() {
 objectSpot.x=random(width);
 objectSpot.y=random(height);
 objectSpot.z=random(255);
+noStroke();
 fill(255,0,0,objectSpot.z);
 ellipse(objectSpot.x,objectSpot.y,80,80);
 
