@@ -7,7 +7,7 @@
 };
 function setup() {
   createCanvas(600,600);
-  objectSpot.x=random(20);
+  objectSpot.x=random(600);
 }
 
 function draw() {
