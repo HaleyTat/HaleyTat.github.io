@@ -17,7 +17,7 @@ objectSpot.x=random(width);
 objectSpot.y=random(height);
 objectSpot.z=random(255);
 
-for (objectSpot.x>400; objectSpot.y < 300;) {
+if (objectSpot.x>=400 && objectSpot.y <= 300) {
  fill(0,0,255);
  }
 
