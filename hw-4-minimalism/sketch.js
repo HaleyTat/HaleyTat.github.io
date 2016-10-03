@@ -16,8 +16,12 @@ function draw() {
 objectSpot.x=random(width);
 objectSpot.y=random(height);
 objectSpot.z=random(255);
+
+if (objectSpot.x>=400 || objectSpot.y>=500) {
+  fill(0,0,255);
+}
 noStroke();
-fill(255,0,0,objectSpot.z);
+fill(250,240,230,objectSpot.z);
 ellipse(objectSpot.x,objectSpot.y,80,80);
 
 }
