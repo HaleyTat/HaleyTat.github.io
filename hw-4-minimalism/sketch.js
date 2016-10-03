@@ -19,7 +19,7 @@ ellipse(200,400,80,80);
 
 if (mouseIsPressed) {
 fill(255,0,255);
-
+random(0,50);
 }
 ellipse(100,300,150,150);
 
