@@ -4,6 +4,7 @@
  var objectSpot={
  x:10,
  y:20,
+ z:10,
 };
 function setup() {
   createCanvas(600,600);
@@ -14,7 +15,8 @@ function setup() {
 function draw() {
 objectSpot.x=random(width);
 objectSpot.y=random(height);
-fill(0);
+objectSpot.z=random(255);
+fill(255,0,0,objectSpot.z);
 ellipse(objectSpot.x,objectSpot.y,80,80);
 
 }
