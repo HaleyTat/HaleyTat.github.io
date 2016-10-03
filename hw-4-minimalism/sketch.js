@@ -7,7 +7,7 @@
 };
 function setup() {
   createCanvas(600,600);
-  frameRate(10);
+  frameRate(5);
   background(255);
 }
 
