@@ -19,13 +19,12 @@ ellipse(200,400,80,80);
 
 if (mouseIsPressed) {
 fill(255,0,255);
-}
 if (mouseX<=200) {
-fill(255,255,255);
-
+  fill(200,0,0);
 } else {
   fill(250,240,230);
 }
 ellipse(100,300,150,150);
 
+}
 }
