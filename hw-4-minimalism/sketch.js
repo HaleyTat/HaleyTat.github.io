@@ -7,12 +7,13 @@
 };
 function setup() {
   createCanvas(600,600);
-  objectSpot.x=random(600);
+  background(255);
 }
 
 function draw() {
-background(255);
+objectSpot.x=random(width);
+objectSpot.y=random(height);
 fill(0);
-ellipse(objectSpot.x,400,80,80);
+ellipse(objectSpot.x,objectSpot.y,80,80);
 
 }
