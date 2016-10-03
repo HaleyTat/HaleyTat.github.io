@@ -18,7 +18,7 @@ objectSpot.y=random(height);
 objectSpot.z=random(255);
 
 for (objectSpot.x>400; objectSpot.y < 300;) {
-  fill(0,0,255);
+  fill(0,0,255,objectSpot.z);
 }
 noStroke();
 fill(0,255,0,objectSpot.z);
