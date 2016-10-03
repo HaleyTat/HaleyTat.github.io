@@ -13,6 +13,6 @@ function setup() {
 function draw() {
 background(255);
 fill(0);
-ellipse(200,400,80,80);
+ellipse(objectSpot.x,400,80,80);
 
 }
