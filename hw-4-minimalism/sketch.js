@@ -17,5 +17,10 @@ background(255);
 fill(0);
 ellipse(200,400,80,80);
 
+if (mouseIsPressed) {
+fill(255,0,255);
+
+}
+ellipse(100,300,150,150);
 
 }
