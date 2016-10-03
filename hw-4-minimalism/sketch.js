@@ -21,7 +21,7 @@ for (objectSpot.x>400; objectSpot.y < 300;) {
   fill(0,0,255);
 }
 noStroke();
-fill(0,objectSpot.z);
+fill(0,255,objectSpot.z);
 ellipse(objectSpot.x,objectSpot.y,40,40);
 
 }
