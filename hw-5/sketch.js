@@ -18,5 +18,8 @@ function setup() {
 
 function draw() {
 
+if (mouseIsPressed) {
+  fill(255,0,0);
+}
 objectSquare.display();
 }
