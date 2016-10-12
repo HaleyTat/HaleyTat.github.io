@@ -19,7 +19,7 @@ grow: function() {
   this.left=this.left;
 
   if (mouseIsPressed) {
-    this.size=this.size+1;
+    this.top=this.top+1;
     this.left=this.left+1;
   }
 }
