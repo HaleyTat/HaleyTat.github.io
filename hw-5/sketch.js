@@ -6,7 +6,7 @@ x:200,
 y:200,
 left:40,
 top:40,
-speed:1,
+// speed:1,
 
 display: function () {
  noStroke();
@@ -19,10 +19,22 @@ grow: function() {
   this.left=this.left;
 
   if (mouseIsPressed) {
-    this.top=this.top+1;
     this.left=this.left+1;
-  }
+    this.top=this.top+1;
+
 }
+},
+secSquare: function() {
+  noStroke();
+  fill(255);
+  rect(100,100,this.left,this.top);
+
+if (mouseIsPressed) {
+  this.left=secSquare+1;
+  this.top=this.left+1;
+}
+}
+},
 
 // move:function() {
   // this.speed=this.speed+1;
@@ -32,7 +44,6 @@ grow: function() {
     // this.speed=this.speed*-1;
   // }
 // }
-};
 
 function setup() {
  createCanvas(600,400);
@@ -44,7 +55,11 @@ background(255);
 // if (this.display>=height) {
   // fill(255,0,0);
 // }
+// first black square
 objectSquare.display();
+// makes square grow
 objectSquare.grow();
+// white square
+objectSquare.secSquare();
 // objectSquare.move();
 }
