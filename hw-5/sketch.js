@@ -7,7 +7,6 @@ y:200,
 left:40,
 top:40,
 // speed:1,
-
 display: function () {
  noStroke();
  fill(0);
@@ -21,7 +20,6 @@ grow: function() {
   if (mouseIsPressed) {
     this.left=this.left+1;
     this.top=this.top+1;
-
 }
 },
 secSquare: function() {
@@ -33,8 +31,8 @@ if (mouseIsPressed) {
   this.left=secSquare+1;
   this.top=this.left+1;
 }
-}
 },
+};
 
 // move:function() {
   // this.speed=this.speed+1;
@@ -44,9 +42,8 @@ if (mouseIsPressed) {
     // this.speed=this.speed*-1;
   // }
 // }
-
 function setup() {
- createCanvas(600,400);
+createCanvas(600,400);
 }
 
 function draw() {
