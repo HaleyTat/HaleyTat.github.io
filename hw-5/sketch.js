@@ -16,7 +16,7 @@ move:function() {
   this.speed=this.speed+1;
   this.y=this.y+this.speed;
 
-  if (this.y>=400) {
+  if (this.y>=height) {
     this.speed=this.speed*-1;
   }
 }
