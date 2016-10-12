@@ -17,7 +17,7 @@ move:function() {
   this.y=this.y+this.speed;
 
   if (this.y>=height) {
-    this.speed=this.speed*-1;
+    this.speed=this.speed-1;
   }
 }
 };
