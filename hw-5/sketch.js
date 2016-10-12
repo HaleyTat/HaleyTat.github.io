@@ -4,22 +4,31 @@
 var objectSquare={
 x:200,
 y:200,
+size:40,
 speed:1,
 
 display: function () {
  noStroke();
  fill(0);
- rect(this.x,this.y,60,60);
+ rect(this.x,this.y,60,this.size);
 },
 
-move:function() {
-  this.speed=this.speed+1;
-  this.y=this.y+this.speed;
+grow: function() {
+  this.size=this.size;
 
-  if (this.y>=height) {
-    this.speed=this.speed-1;
+  if (mouseIsPressed) {
+    this.size=this.size+1;
   }
 }
+
+// move:function() {
+  // this.speed=this.speed+1;
+  // this.y=this.y+this.speed;
+
+  // if (this.y>=height) {
+    // this.speed=this.speed*-1;
+  // }
+// }
 };
 
 function setup() {
@@ -33,5 +42,6 @@ background(255);
   // fill(255,0,0);
 // }
 objectSquare.display();
-objectSquare.move();
+objectSquare.grow();
+// objectSquare.move();
 }
