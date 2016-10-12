@@ -4,20 +4,23 @@
 var objectSquare={
 x:200,
 y:200,
-size:40,
+left:40,
+top:40,
 speed:1,
 
 display: function () {
  noStroke();
  fill(0);
- rect(this.x,this.y,60,this.size);
+ rect(this.x,this.y,this.left,this.top);
 },
 
 grow: function() {
-  this.size=this.size;
+  this.top=this.top;
+  this.left=this.left;
 
   if (mouseIsPressed) {
     this.size=this.size+1;
+    this.left=this.left+1;
   }
 }
 
