@@ -54,9 +54,9 @@ background(255);
 // }
 // first black square
 objectSquare.display();
-// makes square grow
-objectSquare.grow();
 // white square
 objectSquare.secSquare();
 // objectSquare.move();
+// makes square grow
+objectSquare.grow();
 }
