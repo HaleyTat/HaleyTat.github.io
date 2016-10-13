@@ -4,35 +4,30 @@
 var objectSquare={
 x:200,
 y:200,
-left:40,
-top:40,
+sideS:40,
+topS:40,
 // speed:1,
 display: function () {
  noStroke();
  fill(0);
- rect(this.x,this.y,this.left,this.top);
-},
-
-grow: function() {
-  this.top=this.top;
-  this.left=this.left;
-
-  if (mouseIsPressed) {
-    this.left=this.left+1;
-    this.top=this.top+1;
-}
+ rect(this.x,this.y,this.sideS,this.topS);
 },
 secSquare: function() {
   noStroke();
   fill(255);
-  rect(100,100,this.left,this.top);
+  rect(100,100,this.sideS,this.topS);
+},
+grow: function() {
 
-if (mouseIsPressed) {
-  this.left=secSquare+1;
-  this.top=this.left+1;
+  if (mouseIsPressed) {
+    this.sideS=this.sideS+1;
+    this.topS=this.topS+1;
 }
+this.display();
+this.secSquare();
 },
 };
+
 
 // move:function() {
   // this.speed=this.speed+1;
