@@ -17,6 +17,5 @@
   }
 
   function draw() {
-
   objectSquare.display();
 }
