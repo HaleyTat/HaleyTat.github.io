@@ -12,7 +12,7 @@
 
   function draw() {
   background(255);
-  for (var i = 0; i < blocks.length; i++) {
+  for (var i = 0; i < 10; i++) {
     blocks[i].grow();
     blocks[i].display();
   }
