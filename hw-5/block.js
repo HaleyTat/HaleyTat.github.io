@@ -1,22 +1,7 @@
-// homework 4.2
+// homework 5
 
 // minimalism hw
-  // var Blocks=[];
-//
-//   function setup() {
-//     createCanvas(600,400);
-//     for (var i = 0; i < 10; i++) {
-//       blocks[i]= new Block();
-//     }
-// }
-//
-//   function draw() {
-//   background(255);
-//   for (var i = 0; i < 10; i++) {
-//     blocks[i].grow();
-//     blocks[i].display();
-//   }
-// }
+
 function Block() {
    x=200;
    y=200;
@@ -35,8 +20,12 @@ Block.prototype.display= function() {
     pop();
     this.grow();
    };
+
 // allows blocks to grow when mouse is pressed
 Block.prototype.grow= function() {
+
+    this.sideS=this.sideS;
+    this.topS=this.topS;
 
      if (mouseIsPressed) {
        this.sideS=this.sideS+1;
