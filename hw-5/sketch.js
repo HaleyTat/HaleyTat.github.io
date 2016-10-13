@@ -1,40 +1,49 @@
-// homework 4.2
+// homework 5
 
 // minimalism hw
-  var blocks=[];
+var squaresMulti={
+x:200,
+y:200,
+sideS:40,
+topS:40,
+// speed:1,
+display: function() {
+ noStroke();
+ fill(0);
+ rect(this.x,this.y,this.sideS,this.topS);
+},
+grow: function() {
 
-  function setup() {
-    createCanvas(600,400);
-    for (var i = 0; i < 10; i++) {
-      blocks[i]= new Block();
-    }
+  if (mouseIsPressed) {
+    this.sideS=this.sideS+1;
+    this.topS=this.topS+1;
+}
+this.display();
+},
+};
+
+
+// move:function() {
+  // this.speed=this.speed+1;
+  // this.y=this.y+this.speed;
+
+  // if (this.y>=height) {
+    // this.speed=this.speed*-1;
+  // }
+// }
+function setup() {
+createCanvas(600,400);
 }
 
-  function draw() {
-  background(255);
-  for (var i = 0; i < 10; i++) {
-    blocks[i].grow();
-    blocks[i].display();
-  }
-}
-function Block() {
-   x=200;
-   y=200;
-   sideS=40;
-   topS=40;
-// black block
-   this.display= function() {
-    noStroke();
-    fill(0);
-    rect(this.x,this.y,this.sideS,this.topS);
-   };
-// allows blocks to grow when mouse is pressed
-   this.grow= function() {
-     if (mouseIsPressed) {
-       this.sideS=this.sideS+1;
-       this.topS=this.topS+1;
-     }
-// object its referring to
-    this.display();
-    };
+function draw() {
+background(255);
+
+// if (this.display>=height) {
+  // fill(255,0,0);
+// }
+// white square
+squaresMulti.display();
+// objectSquare.move();
+// makes square grow
+squaresMulti.grow();
 }
