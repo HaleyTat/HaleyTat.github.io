@@ -1,3 +1,0 @@
-<!--  -->HW 2-2 Blog Entry/Animation 
-
-The animation was interesting to work with. mouseX and mouseY proved to be a pretty easy operation to execute. Random function proved to be a little bit more difficult to understand. Tutorials were the eventual break through in figuring out the function itself. The map function added a lovely change in color palette. Overall the order and syntax seemed to be the most difficult task to master especially in understanding using the variables to equal themselves while adding a value to create movement like. I did with a square that slowly moves across the screen independently i na horizontal motion. I ended up learning that these action equations need to be added to the very bottom.
