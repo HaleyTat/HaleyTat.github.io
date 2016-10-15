@@ -13,6 +13,18 @@
 
 }
 
+Pacman.prototype.pacDraw= function() {
+
+          push();
+
+    translate(this.x,this.y);
+    fill(this.r,this.g,this.b);
+    ellipse(this.x,this.y,this.size,this.size);
+
+          pop();
+
+};
+
 function setup() {
   createCanvas(600,600);
 
