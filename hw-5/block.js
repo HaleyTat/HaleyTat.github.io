@@ -11,14 +11,14 @@ function Block() {
 // black block
 Block.prototype.display= function() {
 
-    push();
+    // push();
 
     noStroke();
     fill(0);
     rect(this.x,this.y,this.sideS,this.topS);
 
-    pop();
-    this.grow();
+    // pop();
+    // this.grow();
    };
 
 // allows blocks to grow when mouse is pressed
