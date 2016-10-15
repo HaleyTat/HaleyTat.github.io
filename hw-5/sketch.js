@@ -5,12 +5,11 @@ var blockArray=[];
 
 
 
-
 function setup() {
 createCanvas(600,400);
 
   for (var i = 0; i < 10; i++) {
-    blockArray.push(new Block(0));
+    blockArray.push(new Block(200,200));
     }
 }
 
