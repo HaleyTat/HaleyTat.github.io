@@ -31,4 +31,5 @@ Block.prototype.grow= function() {
        this.sideS=this.sideS+1;
        this.topS=this.topS+1;
      }
+    Block.prototype.display();
 };
