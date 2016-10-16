@@ -12,16 +12,15 @@ function Block(x,y) {
 // black block
 this.display= function() {
 
-    fill(0);
-    rect(this.x,this.y,this.size,this.size);
+    fill(250,240,230);
 
    };
 
-// this.clicked= function() {
-//
-//
-//     fill(255);
-//     rect(this.posX,this.posY,this.size,this.size);
+this.clicked= function() {
+
+
+    fill(255);
+    rect(this.posX,this.posY,this.size,this.size);
 
 // grow function
 this.grow= function() {
@@ -29,7 +28,7 @@ this.grow= function() {
   this.size=this.size+1;
 
      };
-// };
+};
 }
 
   function WhiteBlock(x,y) {
