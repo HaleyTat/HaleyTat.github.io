@@ -6,6 +6,8 @@ function Block(x,y) {
    this.x=x;
    this.y=y;
    this.size=40;
+   this.posX=random(0,width);
+   this.posY=random(0,height);
 
 // black block
 this.display= function() {
@@ -19,7 +21,7 @@ this.clicked= function() {
 
 
     fill(255);
-    rect(this.x,this.y,this.size,this.size);
+    rect(this.posX,this.posY,this.size,this.size);
 //   function WhiteBlock(x,y) {
 //       this.x=x;
 //       this.y=y;
