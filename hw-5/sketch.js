@@ -16,12 +16,12 @@ createCanvas(600,400);
     }
 }
 
-function mousePressed() {
-
-  for (var i = 0; i < blocks.length; i++) {
-    blocks[i].clicked();
-  }
-}
+// function mousePressed() {
+//
+//   for (var i = 0; i < blocks.length; i++) {
+//     blocks[i].clicked();
+  // }
+// }
 
 function draw() {
 
@@ -35,7 +35,11 @@ background(255);
     // whiteblocks[i].display();
     // whiteblocks[i].sizeup();
 
-      }
+if (mousePressed()) {
+  fill(255);
+  rect(this.posX,this.posY,this.size,this.size);
+}
 
+      }
 
 }
