@@ -10,17 +10,16 @@ function Block(x,y) {
 // black block
 this.display= function() {
 
-    noStroke();
     fill(0);
     rect(this.x,this.y,this.size,this.size);
 
    };
 
-// allows blocks to grow when mouse is pressed
-this.grow= function() {
+// grow function
+// this.grow= function() {
+// 
+//   this.size=this.size+1;
 
-  this.size=this.size+1;
-
-     };
+    //  };
 
 }
