@@ -18,8 +18,8 @@ createCanvas(600,400);
 
 function mousePressed() {
 
-  for (var i = 0; i < whiteblocks.length; i++) {
-    whiteblocks[i].clicked();
+  for (var i = 0; i < blocks.length; i++) {
+    blocks[i].clicked();
   }
 }
 
