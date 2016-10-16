@@ -15,6 +15,9 @@ this.display= function() {
     fill(250,240,230);
 
    };
+   this.clicked= function() {
+
+       fill(255);
 
 // grow function
 this.grow= function() {
@@ -22,7 +25,7 @@ this.grow= function() {
   this.size=this.size+1;
 
      };
-
+};
 }
 
   function WhiteBlock(x,y) {
@@ -37,14 +40,10 @@ this.grow= function() {
       rect(this.x,this.y,this.size,this.size);
 
   };
-  this.clicked= function() {
-
-      fill(255);
 
   this.sizeup= function() {
 
       this.size=this.size+1;
 
-};
 };
 }
