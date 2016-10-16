@@ -2,18 +2,25 @@
 
 // minimalism hw
 var blocks=[];
-var whiteblocks=[];
+// var whiteblocks=[];
 
 
 function setup() {
 createCanvas(600,400);
 
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < 50; i++) {
     var x=random(0,width);
     var y=random(0,height);
     blocks.push(new Block(x,y));
-    whiteblocks.push(new WhiteBlock(x,y));
+    // whiteblocks.push(new WhiteBlock(x,y));
     }
+}
+
+function mousePressed() {
+
+  for (var i = 0; i < blocks.length; i++) {
+    blocks[i].clicked();
+  }
 }
 
 function draw() {
@@ -25,8 +32,8 @@ background(255);
 
     blocks[i].display();
     blocks[i].grow();
-    whiteblocks[i].display();
-    whiteblocks[i].sizeup();
+    // whiteblocks[i].display();
+    // whiteblocks[i].sizeup();
 
       }
 
