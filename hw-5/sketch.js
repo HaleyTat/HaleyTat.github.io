@@ -2,7 +2,7 @@
 
 // minimalism hw
 var blocks=[];
-
+var whiteblocks=[];
 
 
 function setup() {
@@ -12,6 +12,7 @@ createCanvas(600,400);
     var x=random(0,width);
     var y=random(0,height);
     blocks.push(new Block(x,y));
+    whiteblocks.push(new WhiteBlock(x,y));
     }
 }
 
@@ -22,6 +23,8 @@ background(255);
   for (var i = 0; i < blocks.length; i++) {
     blocks[i].display();
     blocks[i].grow();
+    whiteblocks[i].display();
+    whiteblocks[i].sizeup();
 
 
       }
