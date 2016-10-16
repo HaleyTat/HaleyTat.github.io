@@ -29,7 +29,7 @@ this.grow= function() {
 }
 
   function WhiteBlock(x,y) {
-      this.posX=random(0,width);
+      this.x=x;
       this.y=y;
       this.size=10;
 
