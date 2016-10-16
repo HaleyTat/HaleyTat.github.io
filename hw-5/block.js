@@ -16,10 +16,10 @@ this.display= function() {
    };
 
 // grow function
-// this.grow= function() {
-// 
-//   this.size=this.size+1;
+this.grow= function() {
 
-    //  };
+  this.size=this.size+1;
+
+     };
 
 }
