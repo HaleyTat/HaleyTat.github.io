@@ -8,6 +8,7 @@ function Block(x,y) {
    this.size=40;
    this.posX=random(0,width);
    this.posY=random(0,height);
+   this.col=color(0);
 
 // black block
 this.display= function() {
@@ -17,7 +18,7 @@ this.display= function() {
    };
    this.clicked= function() {
 
-       fill(255);
+       this.col=color(250,240,230);
 
 // grow function
 this.grow= function() {
