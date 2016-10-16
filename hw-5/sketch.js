@@ -20,6 +20,7 @@ function mousePressed() {
 
   for (var i = 0; i < blocks.length; i++) {
     blocks[i].clicked();
+    whiteblocks[i].clicked();
   }
 }
 

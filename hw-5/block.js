@@ -12,7 +12,7 @@ function Block(x,y) {
 // black block
 this.display= function() {
 
-    fill(250,240,230);
+    fill(this.col);
 
    };
 this.clicked= function() {
@@ -32,18 +32,23 @@ this.grow= function() {
       this.x=x;
       this.y=y;
       this.size=10;
+      this.col=color(255);
 
   this.display= function() {
 
       noStroke();
-      fill(255);
+      fill(this.col);
       rect(this.posX,this.y,this.size,this.size);
 
   };
+  this.clicked= function() {
+
+         this.col=color(250,240,230);
 
   this.sizeup= function() {
 
       this.size=this.size+1;
 
+};
 };
 }
