@@ -27,17 +27,16 @@ function draw() {
 
 background(255);
 
-  for (var i = 0; i < blocks.length; i++) {
+if (mousePressed()) {
+  fill(255);
+  rect(this.posX,this.posY,this.size,this.size);
 
+  for (var i = 0; i < blocks.length; i++) {
 
     blocks[i].display();
     // blocks[i].grow();
     // whiteblocks[i].display();
     // whiteblocks[i].sizeup();
-
-if (mousePressed()) {
-  fill(255);
-  rect(this.posX,this.posY,this.size,this.size);
 }
 
       }
