@@ -15,31 +15,33 @@ this.display= function() {
 
    };
 
-// grow function
-this.grow= function() {
+this.clicked= function() {
 
-  this.size=this.size+1;
 
-     };
-
-}
-
-function WhiteBlock(x,y) {
-    this.x=x;
-    this.y=y;
-    this.size=10;
-
-this.display= function() {
-
-    noStroke();
     fill(255);
     rect(this.x,this.y,this.size,this.size);
+//   function WhiteBlock(x,y) {
+//       this.x=x;
+//       this.y=y;
+//       this.size=10;
+//
+//   this.display= function() {
+//
+//       noStroke();
+//       fill(255);
+//       rect(this.x,this.y,this.size,this.size);
+//
+//   };
+//
+//   this.sizeup= function() {
+//
+//       this.size=this.size+1;
+//
+// grow function
+// this.grow= function() {
+//
+//   this.size=this.size+1;
 
-};
-
-this.sizeup= function() {
-
-    this.size=this.size+1;
-
-};
+     };
+// };
 }

@@ -31,7 +31,7 @@ background(255);
 
 
     blocks[i].display();
-    blocks[i].grow();
+    // blocks[i].grow();
     // whiteblocks[i].display();
     // whiteblocks[i].sizeup();
 
