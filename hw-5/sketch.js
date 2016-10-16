@@ -1,7 +1,7 @@
 // homework 5
 
 // minimalism hw
-var blockArray=[];
+var blocks=[];
 
 
 
@@ -9,7 +9,9 @@ function setup() {
 createCanvas(600,400);
 
   for (var i = 0; i < 10; i++) {
-    blockArray.push(new Block(200,200));
+    var x=width/2;
+    var y=height/2;
+    blocks.push(new Block(x,y));
     }
 }
 
@@ -17,8 +19,8 @@ function draw() {
 
 background(255);
 
-  for (var i = 0; i < blockArray.length; i++) {
-    blockArray[i].display();
+  for (var i = 0; i < blocks.length; i++) {
+    blocks[i].display();
 
 
       }
