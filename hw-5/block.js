@@ -34,20 +34,19 @@ this.grow= function() {
       this.y=y;
       this.size=10;
 
-  this.display= function() {
+      this.display= function() {
 
-      noStroke();
-      fill(255);
-      rect(this.x,this.y,this.size,this.size);
+        fill(255);
+        rect(this.x,this.y,this.size,this.size);
 
   };
   // this.clicked= function() {
   //
   //        this.col=color(250,240,230);
 
-  this.sizeup= function() {
+    this.sizeup= function() {
 
-      this.size=this.size+1;
+        this.size=this.size+1;
 
 };
 
