@@ -16,10 +16,10 @@ this.display= function() {
     rect(this.x,this.y,this.size,this.size);
    };
 
-this.clicked= function() {
-
-       this.col=color(250,240,230);
-};
+// this.clicked= function() {
+//
+//        this.col=color(250,240,230);
+// };
 
 // grow function
 this.grow= function() {
@@ -33,12 +33,12 @@ this.grow= function() {
       this.x=x;
       this.y=y;
       this.size=10;
-      // this.col=color(255);
+      this.filler=255;
 
   this.display= function() {
 
       noStroke();
-      fill(this.col);
+      fill(this.filler);
       rect(this.posX,this.y,this.size,this.size);
 
   };
