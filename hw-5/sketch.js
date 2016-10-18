@@ -36,8 +36,15 @@ background(255);
 
     blocks[i].display();
     blocks[i].grow();
-    whiteblocks[i].display();
-    whiteblocks[i].sizeup();
+    // whiteblocks[i].display();
+    // whiteblocks[i].sizeup();
+
+
+}
+
+for (var m = 0; m < whiteblocks.length; m++) {
+  whiteblocks[m].display();
+  whiteblocks[m].sizeup();
 }
 
       // }
