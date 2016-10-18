@@ -33,12 +33,11 @@ this.grow= function() {
       this.x=x;
       this.y=y;
       this.size=10;
-      this.filler=255;
 
   this.display= function() {
 
       noStroke();
-      fill(this.filler);
+      fill(255);
       rect(this.posX,this.y,this.size,this.size);
 
   };
