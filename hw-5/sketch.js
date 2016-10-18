@@ -1,4 +1,4 @@
-// homework 5
+// homework 6.1
 
 // minimalism hw
 var blocks=[];
