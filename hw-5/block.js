@@ -29,27 +29,27 @@ this.grow= function() {
      };
 }
 
-//   function WhiteBlock(x,y) {
-//       this.x=x;
-//       this.y=y;
-//       this.size=10;
-//       // this.col=color(255);
-//
-//   this.display= function() {
-//
-//       noStroke();
-//       fill(this.col);
-//       rect(this.posX,this.y,this.size,this.size);
-//
-//   };
-//   // this.clicked= function() {
-//   //
-//   //        this.col=color(250,240,230);
-//
-//   this.sizeup= function() {
-//
-//       this.size=this.size+1;
-//
-// // };
-// };
-// }
+  function WhiteBlock(x,y) {
+      this.x=x;
+      this.y=y;
+      this.size=10;
+      // this.col=color(255);
+
+  this.display= function() {
+
+      noStroke();
+      fill(this.col);
+      rect(this.posX,this.y,this.size,this.size);
+
+  };
+  // this.clicked= function() {
+  //
+  //        this.col=color(250,240,230);
+
+  this.sizeup= function() {
+
+      this.size=this.size+1;
+
+};
+
+}
