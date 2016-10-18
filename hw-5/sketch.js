@@ -8,7 +8,7 @@ var whiteblocks=[];
 function setup() {
 createCanvas(600,400);
 
-  for (var i = 0; i < 50; i++) {
+  for (var i = 0; i < 40; i++) {
     var x=random(0,width);
     var y=random(0,height);
     blocks.push(new Block(x,y));
@@ -16,13 +16,13 @@ createCanvas(600,400);
     }
 }
 
-function mousePressed() {
-
-  for (var i = 0; i < blocks.length; i++) {
-    blocks[i].clicked();
-    blocks[i].grow();
-  }
-}
+// function mousePressed() {
+//
+//   for (var i = 0; i < blocks.length; i++) {
+//     blocks[i].clicked();
+//     blocks[i].grow();
+//   }
+// }
 
 function draw() {
 

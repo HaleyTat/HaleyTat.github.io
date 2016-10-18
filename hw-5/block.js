@@ -24,7 +24,7 @@ this.display= function() {
 // grow function
 this.grow= function() {
 
-  this.size=this.size+1;
+  this.size=this.size+2;
 
      };
 }
@@ -38,7 +38,7 @@ this.grow= function() {
 
       noStroke();
       fill(255);
-      rect(this.posX,this.y,this.size,this.size);
+      rect(this.x,this.y,this.size,this.size);
 
   };
   // this.clicked= function() {
