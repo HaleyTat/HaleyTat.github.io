@@ -1,37 +1,18 @@
-// homework 4.2
+// homework 7.2
 
-// minimalism hw
- function Pacman (red,green,blue) {
+// pacman hw
 
-    x=mouseX;
-    y=mouseY;
-    size=60;
-    dir=1;
-    this.r=red;
-    this.b=blue;
-    this.g=green;
-
-}
-
-Pacman.prototype.pacDraw= function() {
-
-          push();
-
-    translate(this.x,this.y);
-    fill(this.r,this.g,this.b);
-    ellipse(this.x,this.y,this.size,this.size);
-
-          pop();
-
-};
 
 function setup() {
   createCanvas(600,600);
-
+  background(0);
 }
 
 function draw() {
-background(0);
+
+Pacman.displayPac1();
+Pacman.displayPac2();
+Pacman.displayPac3();
 
 
 }
