@@ -2,7 +2,7 @@
 
 // pacman hw
 
-var pacman= [];
+var pacMan=[];
 
 
 function setup() {
@@ -12,7 +12,7 @@ function setup() {
   for (var i = 0; i < 10; i++) {
     var x= random(width);
     var y= random(height);
-    pacman.push= (new Pacman(x,y));
+    pacMan.push= (new Pacman(x,y));
   }
 
 }
@@ -21,8 +21,8 @@ function draw() {
 
 background(0);
 
-for (var i = 0; i < pacman.length; i++) {
-  pacman[i].displayPac1();
+for (var i = 0; i < pacMan.length; i++) {
+  pacMan[i].display();
 }
 
 // Pacman.displayPac1();
