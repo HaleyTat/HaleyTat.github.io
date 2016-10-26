@@ -1,2 +1,2 @@
-<!--  --> HOMEWORK 4.3 MINIMALISM
--- working on cleaning up code and 
+<!--  --> HOMEWORK 7.2 pacman
+-- Pacman was the most difficult assignment yet. The timer and rotate function I could not figure out. Linking the multiple .js files together created errors in my code, which led me to deleting my pacman.js sketch twice, which I linked with this assignment at first. Due to the heavy and many complications in my pacman code, I attempted at coming as close to the assignment as possible. I could not make the pacMEN aware of each other, but attempted to change the direction of the facial features. Overall gave it a good college try.
