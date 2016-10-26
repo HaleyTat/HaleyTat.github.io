@@ -2,8 +2,6 @@
 
 // pacman hw
 
-// var pacmans=[];
-
 var pacX=[10,50,100,150,200];
 var pacY=[100,200,300,400,500];
 var sizePac=50;
@@ -97,7 +95,7 @@ function draw() {
   // pacman 5 eye
     ellipse(pacX[4],pacY[4]-10,eyeSize,eyeSize);
 
-
+// movement for the pacMEN
     pacX[0]=pacX[0]+speed1;
     pacX[1]=pacX[1]+speed2;
     pacX[2]=pacX[2]+speed1;
