@@ -2,32 +2,48 @@
 
 // pacman hw
 
-var pacMan=[];
-
+// var pacmans=[];
 
 function setup() {
 
-  createCanvas(600,600);
-
-  for (var i = 0; i < 10; i++) {
-    var x= random(width);
-    var y= random(height);
-    pacMan.push= (new Pacman(x,y));
-  }
+createCanvas(600,600);
 
 }
 
 function draw() {
 
-background(0);
+// background(0);
+  // background(255);
 
-for (var i = 0; i < pacMan.length; i++) {
-  pacMan[i].display();
+background(255);
+
+Pacman.display();
+
+
 }
 
-// Pacman.displayPac1();
-// Pacman.displayPac2();
-// Pacman.displayPac3();
+
+function Pacman() {
+
+    this.x=20;
+    this.y=300;
+    this.posX=30;
+    this.posY=400;
+    this.speed=1;
+    dir=1;
+    size=60;
+    eyeY=280;
+    eyeSize=5;
+
+
+this.display= function() {
+
+fill(255,255,0);
+ellipse(this.x,this.y,this.size,this.size);
+fill(0);
+ellipse(this.posX,this.eyeY,this.eyeSize,this.eyeSize);
+
+};
 
 
 }
