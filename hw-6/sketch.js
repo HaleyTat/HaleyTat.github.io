@@ -2,22 +2,28 @@
 
 // pacman hw
 
-// var pacmans=[];
+var pacmans=[];
 
 function setup() {
 
 createCanvas(600,600);
 
+for (var i = 0; i < 5; i++) {
+
+  var x=this.x;
+  var y=this.y;
+  pacmans[i].push(new Pacman(x,y));
+}
+
 }
 
 function draw() {
 
-// background(0);
-  // background(255);
-
 background(255);
 
-Pacman.display();
+for (var i = 0; i < pacmans.length; i++) {
+  pacmans[i].display();
+}
 
 
 }
