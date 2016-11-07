@@ -11,7 +11,7 @@ function setup() {
 
 function mousePressed() {
 
-  createP('This data above are about my favorite cities');
+  ellipse(20,50,30,30);
 
 }
 
