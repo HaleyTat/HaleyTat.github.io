@@ -4,21 +4,22 @@
 
 var h1;
 
-
 function setup() {
 
   createCanvas(200,200);
-  h1=createElement('h1', 'This data reflects US populations');
 }
 
-function mousePressed() {
-
-  createP('This data above are about my favorite cities');
-
-}
+// function mousePressed() {
+//
+//   createP('This data above are about my favorite cities');
+//
+// }
 
 function draw() {
 
+
+fill(255,255,0);
+ellipse(100,100,50,50);
 
 
 }
