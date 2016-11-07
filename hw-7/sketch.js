@@ -9,11 +9,11 @@ function setup() {
   createCanvas(200,200);
 }
 
-// function mousePressed() {
-//
-//   createP('This data above are about my favorite cities');
-//
-// }
+function mousePressed() {
+
+  createP('This data above are about my favorite cities');
+
+}
 
 function draw() {
 
