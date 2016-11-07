@@ -7,12 +7,7 @@ var h1;
 function setup() {
 
   createCanvas(200,200);
-}
-
-function mousePressed() {
-
-  ellipse(20,50,30,30);
-
+  createP('California,Nevada,Montana,Washington');
 }
 
 function draw() {
