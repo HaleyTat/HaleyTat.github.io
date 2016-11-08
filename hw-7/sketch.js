@@ -5,7 +5,7 @@
 // var h1;
 
 function setup() {
-  createCanvas(200,200);
+  createCanvas(400,400);
 
 }
 
@@ -15,6 +15,6 @@ background(255,240,230);
 
 // createP('California,Nevada,Washington,Montana');
 textSize(36);
-text('California,Nevada,Washington,Montana',100,100,150,100);
+text('California,Nevada,Washington,Montana',0,100,windowWidth,100);
 
 }
