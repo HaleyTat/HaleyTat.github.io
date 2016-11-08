@@ -14,6 +14,6 @@ function draw() {
 background(255);
 
 createP('California,Nevada,Washington,Montana');
-
+text('California,Nevada,Washington,Montana',100,100);
 
 }
