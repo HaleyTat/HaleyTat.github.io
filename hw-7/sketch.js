@@ -6,7 +6,13 @@
 
 function setup() {
   createCanvas(800,400);
-  createP("California, Nevada, Washington, Montana");
+
+}
+
+function mousePressed() {
+
+  createP("California Nevada Washington Montana");
+
 }
 
 function draw() {
