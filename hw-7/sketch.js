@@ -2,19 +2,18 @@
 
 // pacman hw
 
-var h1;
+// var h1;
 
 function setup() {
-
   createCanvas(200,200);
-  createP('California,Nevada,Montana,Washington');
+
 }
 
 function draw() {
 
+background(255);
 
-fill(255,255,0);
-ellipse(100,100,50,50);
+createP('California,Nevada,Washington,Montana');
 
 
 }
