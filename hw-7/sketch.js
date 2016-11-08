@@ -11,9 +11,10 @@ function setup() {
 
 function draw() {
 
-background(255);
+background(0);
 
-createP('California,Nevada,Washington,Montana');
+// createP('California,Nevada,Washington,Montana');
+textSize(36);
 text('California,Nevada,Washington,Montana',100,100);
 
 }
