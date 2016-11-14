@@ -15,3 +15,15 @@
 Possible SUBPROBLEMS
 
 The possible subproblems will be meticulously working out the timing of the timeout function with the animation of the two profiles. After linking the two files into the main sketch.js file, the rest of the subproblems I will most likely encounter will be the ability to make all of these separate functions to execute. This has been a big problem in the past with past assignments like Pacman, so this will be the biggest challenge.
+
+
+Proposed Wrok Schedule
+
+11/21-28
+Over Thanksgiving week/and the weekend after, I will develop the two classes with the organic lines which will establish the two side profiles. This will include all of the objects.
+
+11/29-12/4
+I will have the map function and/or the timeout function working for the bacgkround. Hopefully by this time the mouseIsPressed function will also be up and working.
+
+12/5-12/10
+The animation of the talking between the two figures will be up and going by this time. This week will also include fine tuning of the animation. 
