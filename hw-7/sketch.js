@@ -2,22 +2,19 @@
 
 // pacman hw
 
-// var h1;
+var button;
 
 function setup() {
   createCanvas(800,400);
-
-}
-
-function mousePressed() {
-
   createP("California Nevada Washington Montana");
-
 }
 
 function draw() {
 
 background(255,240,230);
+
+button= createButton('click me');
+button.position(20,20); 
 
 // createP("California, Nevada, Washington, Montana");
 // textSize(36);
