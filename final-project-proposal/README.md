@@ -1,5 +1,7 @@
 <!--  -->Final Project Proposal
 
+<!--  -->Listed Above are the reference/inspiration animations from Nicolas Ménard. (MénardEx1 & MénardEx2)
+
   This final project, I want to zero in on my focus on animation and use this project to help further develop skills in learning technical animation. I want to to create in a separate file for this project, and code 2 classes, which will consist of collective simple lines that will create a simple drawing of a side profile. One in each, so that it will have 2 head side profiles. These two will be facing each other and through basic parameters within each class by changing XPOS and YPOS at those plotted points. I will shift only the mouth and eyebrows of these sketches during their interaction. The background color will be a signal of the interaction using symbolic meaning to convey the quality of the conversation. It will shift to either green or red throughout the short interaction. I will achieve the background color using a simple mapping function in the background that I will use the timeout function to execute the time of these specific colors of red and green to occur.
 
   The project was heavily inspired by the Digital Artist and Animator, Nicolas Ménard. He focuses on people within space and the interactions within the environment he programs.
