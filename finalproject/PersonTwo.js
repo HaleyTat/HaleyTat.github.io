@@ -1,10 +1,23 @@
-function PersonTwo(u,v,size2) {
+function PersonTwo(x,y) {
 
-    this.u=u;
-    this.v=v;
-    this.mouthSize2=30;
+    this.x = x;
+    this.y = y;
+    this.size = width * 0.3;
+    // eye parameters
+    this.eyeHght= height * -0.04;
+    this.eyeX=this.size*-0.35;
+    this.eyeY=this.size*-0.15;
+    this.eyeHeight1=height * -0.1;
+    this.eyeSize2=this.size*0.1;
+    // this.eyeXf=this.size*0.6;
+    this.eyeSpace = this.size*0.3;
+    this.eyeCurve=this.eyeHght*0.103;
+    this.eyeClosed11=this.size*-0.5;
+    this.eyeClosed12=this.size*-0.2;
+    // mouth parameters
+    this.mouthSize2=this.size*0.15;
     this.mouth2=PI/4;
-    this.eyeSize2=size2;
+    // other parameters
     this.facePos = 0;
     this.faceWait = 60;
     this.timer = 0;
@@ -28,7 +41,9 @@ PersonTwo.prototype.picture= function(){
     // head
     noStroke();
     fill(246,192,235);
-    ellipse(400,250,200,270);
+    translate(this.x, this.y);
+    ellipse(0,0,this.size,this.size*1.35);
+    // ellipse(400,250,200,270);
 
 
 // EYELASHES
@@ -46,15 +61,26 @@ PersonTwo.prototype.picture= function(){
     // hair
     noStroke();
     fill(250,51,224);
-    ellipse(360,130,150,90);
+    ellipse(this.size*-0.2,this.size*-0.6,this.size*0.75,this.size*0.45);
     // eyebrow1
     noFill();
     stroke(0);
-    curve(300,230,320,190,360,190,380,230);
+    curve(this.eyeClosed11,this.eyeHeight1,this.size*-0.4,(height*-0.15),this.size*-0.3,(height*-0.15),this.eyeClosed12,this.eyeHeight1);
     // eyebrow2
     noFill();
     stroke(0);
-    curve(400,230,420,190,460,190,480,230);
+    curve(this.eyeClosed11+this.eyeSpace,this.eyeHeight1,this.size*-0.4+this.eyeSpace,(height*-0.15),this.size*-0.3+this.eyeSpace,(height*-0.15),this.eyeClosed12+this.eyeSpace,this.eyeHeight1);
+    //
+    // // point where closedeyeY is
+    // fill(0);
+    // ellipse(this.eyeX,this.eyeHght,this.eyeSize2,this.eyeSize2);
+
+    // // linefor eyebrowtest
+    // stroke(0);
+    // line(this.size*-0.4,this.eyeHeight1,this.size*-0.25,this.eyeHeight1);
+    // stroke(0);
+    // line(this.size*-0.4,this.eyeHeight1,this.size*-0.25,this.eyeHeight1);
+
 
     if (this.facePos === 0) {
         this.mvt_openEye1();
@@ -79,11 +105,12 @@ PersonTwo.prototype.picture= function(){
         this.newNose2Mvt();
     }
 
-    fill(0);
-    strokeWeight(0.1);
-    text(this.facialSeq[this.seqID], 20, 20);
-    text(this.seqID, 20, 40);
-    text(this.facePos, 20, 60);
+    // fill(0);
+    // strokeWeight(0.1);
+    // text(this.facialSeq[this.seqID], 20, 20);
+    // text(this.seqID, 20, 40);
+    // text(this.facePos, 20, 60);
+    text(this.size, 20, 60);
     pop();
 };
 
@@ -91,28 +118,28 @@ PersonTwo.prototype.mvt_openEye1 = function(){
     // open eye 1
     noStroke();
     fill(0);
-    ellipse(this.u,this.v,this.eyeSize2,35);
+    ellipse(this.eyeX,this.eyeY,this.eyeSize2,this.eyeSize2*1.6);
 };
 
 PersonTwo.prototype.mvt_openEye2 = function(){
     // open eye 2
     noStroke();
     fill(0);
-    ellipse(this.u+85,this.v,this.eyeSize2,35);
+    ellipse(this.eyeX+this.eyeSpace, this.eyeY, this.eyeSize2,this.eyeSize2*1.6);
 };
 
 PersonTwo.prototype.mvt_closedEye1 = function(){
 // closed eye 1
     noFill();
     stroke(0);
-    curve(300,200,320,250,360,250,380,200);
+    curve(this.eyeClosed11,this.eyeY,this.size*-0.4,this.eyeHght,this.size*-0.3,this.eyeHght,this.eyeClosed12,this.eyeY);
 };
 
 PersonTwo.prototype.mvt_closedEye2 = function(){
     // closed eye 2
     noFill();
     stroke(0);
-    curve(400,200,420,250,460,250,480,200);
+    curve(this.eyeClosed11+this.eyeSpace,this.eyeY,this.size*-0.4+this.eyeSpace,this.eyeHght,this.size*-0.3+this.eyeSpace,this.eyeHght,this.eyeClosed12+this.eyeSpace,this.eyeY);
 };
 
 
@@ -154,14 +181,15 @@ PersonTwo.prototype.newNoseMvt = function () {
     // nose
     noStroke();
     fill(250,51,224);
-    triangle(365,275,377,250,389,275);
-};
-PersonTwo.prototype.newNose2Mvt = function () {
-    // nose
-    noStroke();
-    fill(250,51,224);
-    triangle(360,265,377,240,389,265);
+    triangle(this.size*-0.25,height*0.05,this.size*-0.2,0,this.size*-0.15,height*0.05);
 };
         // this.facePos = floor( random( 4 ) );
         // this.faceWait = floor( random( 20, 120 ) );
         // this.timer = 0;
+
+PersonTwo.prototype.newNose2Mvt = function () {
+    // nose
+    noStroke();
+    fill(250,51,224);
+    triangle(this.size*-0.275,height*0.075,this.size*-0.225,height*0.025,this.size*-0.175,height*0.075);
+};

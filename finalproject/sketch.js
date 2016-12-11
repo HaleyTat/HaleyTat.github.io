@@ -11,14 +11,13 @@ function setup() {
     createCanvas(windowWidth,windowHeight);
 
 
-    var s=width/2-150;
-    var t=215;
-    var size1=10;
-    person1 = new PersonOne(s,t,size1);
-    var u=width/2+100;
-    var v=235;
-    var size2=20;
-    person2 = new PersonTwo(u,v,size2);
+    var s=(width*-0.3);
+    var t=0;
+    // var size1=width*0.3;
+    person1 = new PersonOne(u,v);
+    var u=width*0.8;
+    var v=height*0.47;
+    person2 = new PersonTwo(u,v);
 
     setTimeout(ellipseBG,3000);
 }
