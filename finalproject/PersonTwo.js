@@ -7,7 +7,7 @@ function PersonTwo(x,y) {
     this.eyeHght= height * -0.04;
     this.eyeX=this.size*-0.35;
     this.eyeY=this.size*-0.15;
-    this.eyeHeight1=height * -0.1;
+    this.eyeHeight1=height * 0.07;
     this.eyeSize2=this.size*0.1;
     this.eyeSpace = this.size*0.3;
     this.eyeCurve=this.eyeHght*0.103;
@@ -50,7 +50,7 @@ PersonTwo.prototype.picture= function(){
     // eyebrow1
     noFill();
     stroke(0);
-    curve(this.eyeClosed11,this.eyeHeight1,this.size*-0.4,(height*-0.15),this.size*-0.3,(height*-0.15),this.eyeClosed12,this.eyeHeight1);
+    curve(this.eyeClosed11,this.eyeHeight1,this.size*-0.4,(height*-0.14),this.size*-0.3,(height*-0.14),this.eyeClosed12,this.eyeHeight1);
     // eyebrow2
     noFill();
     stroke(0);
@@ -120,7 +120,7 @@ PersonTwo.prototype.mvt_closedEye2 = function(){
 PersonTwo.prototype.mvt_pursedLip = function(){
     // pursed Lip
     stroke(0);
-    line(370,350,400,350);
+    line(this.size*-0.275,height*0.2,this.size*-0.1,height*0.2);
 
 };
 
@@ -128,7 +128,7 @@ PersonTwo.prototype.mvt_openMouth2 = function(){
     // mouth
     stroke(255,0,255);
     fill(255,0,255);
-    curve(340,200,370,350,420,350,440,200);
+    curve(this.size*-0.4,height*0.05,this.size*-0.3,height*0.2,this.size*-0.1,height*0.2,this.size*-0.05,height*0.0025);
 };
 
 
