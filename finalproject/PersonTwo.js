@@ -9,7 +9,6 @@ function PersonTwo(x,y) {
     this.eyeY=this.size*-0.15;
     this.eyeHeight1=height * -0.1;
     this.eyeSize2=this.size*0.1;
-    // this.eyeXf=this.size*0.6;
     this.eyeSpace = this.size*0.3;
     this.eyeCurve=this.eyeHght*0.103;
     this.eyeClosed11=this.size*-0.5;
@@ -43,21 +42,7 @@ PersonTwo.prototype.picture= function(){
     fill(246,192,235);
     translate(this.x, this.y);
     ellipse(0,0,this.size,this.size*1.35);
-    // ellipse(400,250,200,270);
 
-
-// EYELASHES
-// steps=6;
-// for ( var g = 0; g <= steps; g++) {
-//     var t=g/steps;
-//     var x=curvePoint(400,420,460,480,t);
-//     var y=curve(200,250,250,200,t);
-//     var tx=curveTangent(400,420,460,480,t);
-//     var ty=curveTangent(200,250,250,200,t);
-//     var a=atan2(ty, tx);
-//      a-=PI/2;
-//     line(x,y,cos(a)*8+x,sin(a)*8+y);
-// }
     // hair
     noStroke();
     fill(250,51,224);
@@ -70,16 +55,6 @@ PersonTwo.prototype.picture= function(){
     noFill();
     stroke(0);
     curve(this.eyeClosed11+this.eyeSpace,this.eyeHeight1,this.size*-0.4+this.eyeSpace,(height*-0.15),this.size*-0.3+this.eyeSpace,(height*-0.15),this.eyeClosed12+this.eyeSpace,this.eyeHeight1);
-    //
-    // // point where closedeyeY is
-    // fill(0);
-    // ellipse(this.eyeX,this.eyeHght,this.eyeSize2,this.eyeSize2);
-
-    // // linefor eyebrowtest
-    // stroke(0);
-    // line(this.size*-0.4,this.eyeHeight1,this.size*-0.25,this.eyeHeight1);
-    // stroke(0);
-    // line(this.size*-0.4,this.eyeHeight1,this.size*-0.25,this.eyeHeight1);
 
 
     if (this.facePos === 0) {
@@ -110,7 +85,6 @@ PersonTwo.prototype.picture= function(){
     // text(this.facialSeq[this.seqID], 20, 20);
     // text(this.seqID, 20, 40);
     // text(this.facePos, 20, 60);
-    text(this.size, 20, 60);
     pop();
 };
 
