@@ -12,7 +12,6 @@ function setup() {
 
     createCanvas(windowWidth,windowHeight);
 
-
     var s=(width*-0.3);
     var t=0;
     // var size1=width*0.3;
@@ -28,23 +27,27 @@ function draw() {
 
     // time1=map(mouseX,0,500,100,255);
     background(128, 229, 255);
-
-
+    // heartBG();
 
     person1.display();
     person2.picture();
     flower.display();
 
-    setTimeout(heartBG,6000);
+    textSize(20);
+    text('click to see the happy ending',width*0.35,height*0.9,width*0.55,height*0.9);
+
+    if (mouseIsPressed) {
+        heartBG();
+    }
 
 }
 
 function heartBG(){
     noStroke();
     fill(255, 153, 255);
-    ellipse(width*0.5,height*0.3,((width*0.4)*0.09),((width*0.4)*0.09));
-    ellipse(width*0.525,height*0.3,((width*0.4)*0.09),((width*0.4)*0.09));
+    ellipse(width*0.498,height*0.3,((width*0.4)*0.09),((width*0.4)*0.09));
+    ellipse(width*0.527,height*0.3,((width*0.4)*0.09),((width*0.4)*0.09));
     fill(255, 153, 255);
-    triangle(width*0.47875,height*0.3,width*0.5115,height*0.4,width*0.5461,height*0.3);
-    // setTimeout(heartBG,5000);
+    triangle(width*0.47875,height*0.3,width*0.5115,height*0.395,width*0.5461,height*0.3);
+
 }
