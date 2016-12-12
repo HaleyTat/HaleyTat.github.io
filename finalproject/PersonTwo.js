@@ -41,7 +41,7 @@ PersonTwo.prototype.picture= function(){
     noStroke();
     fill(246,192,235);
     translate(this.x, this.y);
-    ellipse(0,0,this.size,this.size*1.35);
+    ellipse(0,0,this.size,this.size*1.3);
 
     // hair
     noStroke();
@@ -59,32 +59,31 @@ PersonTwo.prototype.picture= function(){
 
     if (this.facePos === 0) {
         this.mvt_openEye1();
-        this.mvt_openEye2();
-        this.mvt_openMouth2();
-        this.newNoseMvt();
-    } else if (this.facePos === 1) {
-        this.mvt_openEye1();
         this.mvt_closedEye2();
         this.mvt_openMouth2();
         this.newNose2Mvt();
+    } else if (this.facePos === 1) {
+        // this.mvt_openEye1();
+        // this.mvt_closedEye2();
+        // this.mvt_openMouth2();
+        // this.newNoseMvt();
+        this.mvt_openEye1();
+        this.mvt_openEye2();
+        this.mvt_openMouth2();
+        this.newNoseMvt();
 
     } else if (this.facePos === 2) {
         this.mvt_closedEye1();
-        this.mvt_openEye2();
-        this.mvt_pursedLip();
-        this.newNoseMvt();
-    } else if (this.facePos === 3) {
-        this.mvt_closedEye1();
         this.mvt_closedEye2();
         this.mvt_pursedLip();
         this.newNose2Mvt();
+    } else if (this.facePos === 3) {
+        this.mvt_openEye1();
+        this.mvt_openEye2();
+        this.mvt_pursedLip();
+        this.newNoseMvt();
     }
 
-    // fill(0);
-    // strokeWeight(0.1);
-    // text(this.facialSeq[this.seqID], 20, 20);
-    // text(this.seqID, 20, 40);
-    // text(this.facePos, 20, 60);
     pop();
 };
 

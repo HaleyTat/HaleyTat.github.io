@@ -48,7 +48,7 @@ function PersonOne(x,y){
 
 PersonOne.prototype.display= function(){
 
-    // this.newFaceMvt2();
+    this.newFaceMvt2();
 
     push();
     // head
@@ -64,77 +64,64 @@ PersonOne.prototype.display= function(){
     noStroke();
     fill(0);
     ellipse(this.eyeX1+this.eyeSpace2,this.eyeY1,this.eyeSize1,this.eyeSize1);
-    // open mouth
-    // noStroke();
-    // fill(0);
-    // ellipse(this.mouthX1,this.mouthY1,this.mouthSize1,this.mouthSize1);
-    // closed mouth
-    // noFill();
-    // stroke(0);
-    // curve(this.smirkX,this.smirkY1,this.smirkX*1.1,this.x*1.05,this.smirkX*1.2,this.x*1.125,this.smirkX*1.3,this.smirkCurve);
 
-    // unibrow for now
-    noFill();
-    stroke(0);
-    curve(this.uniBrowX1*0.8,this.uniBrowY2t,this.uniBrowX1*0.85,this.unibrowCurve,this.uniBrowX1*1.15,this.unibrowCurve,this.uniBrowX1*1.3,this.uniBrowY2t);
-    // smirk
-    noFill();
-    stroke(0);
-    curve(this.smirkX,this.smirkY1,this.smirkX*1.1,this.x*1.05,this.smirkX*1.2,this.x*1.125,this.smirkX*1.3,this.smirkCurve);
-
-// };
-
-    // if (this.facePos2 === 0) {
-    //     this.mvt_openMouth1();
-    // } else if (this.facePos2 === 1) {
-    //     this.mvt_mouthClosed1();
-    // } else if (this.facePos2 === 2) {
-    //     this.mvt_openMouth1();
-    // } else if (this.facePos2 === 3) {
-    //     this.mvt_mouthClosed1();
-    // }
+    if (this.facePos2 === 0) {
+        this.mvt_mouthClosed1();
+        this.mvt_uniBrow2();
+    } else if (this.facePos2 === 1) {
+        this.mvt_mouthClosed1();
+        this.mvt_uniBrow2();
+    } else if (this.facePos2 === 2) {
+        this.mvt_openMouth1();
+        this.mvt_uniBrow();
+    } else if (this.facePos2 === 3) {
+        this.mvt_mouthClosed1();
+        this.mvt_uniBrow();
+    }
 
     pop();
+};
+PersonOne.prototype.newFaceMvt2= function(){
+    this.timer2++;
 
-// PersonOne.prototype.newFaceMvt2= function(){
-//     this.timer2++;
-//
-//     if (this.timer2 >= this.faceWait2) {
-//         this.facePtr2++;
-//
-//         if (this.facePtr2>=this.facialSeq2[this.SeqID2].length) {
-//             this.SeqID2= floor( random(this.facialSeq2.length));
-//             this.facePtr2=0;
-//         }
-//
-//         this.facePos2= this.facialSeq2[this.SeqID2][this.facePtr2][0];
-//         this.faceWait2= this.facialSeq2[this.SeqID2][this.facePtr2][1] * frameRate();
-//
-//         this.timer2=0;
-//     }
-// };
-// PersonOne.prototype.mvt_unibrow= function(){
-//
-//     // unibrow
-//     noFill();
-//     stroke(0);
-//     curve(this.uniBrowX1,this.eyeY1,this.uniBrowX1*0.25,this.eyeY1,this.uniBrowX1*0.3,this.eyeY1,this.uniBrowX1*-0.5,this.eyeY1);
-//
+    if (this.timer2 >= this.faceWait2) {
+        this.facePtr2++;
+
+        if (this.facePtr2>=this.facialSeq2[this.SeqID2].length) {
+            this.SeqID2= floor( random(this.facialSeq2.length));
+            this.facePtr2=0;
+        }
+
+        this.facePos2= this.facialSeq2[this.SeqID2][this.facePtr2][0];
+        this.faceWait2= this.facialSeq2[this.SeqID2][this.facePtr2][1] * frameRate();
+
+        this.timer2=0;
+    }
+};
 
 PersonOne.prototype.mvt_openMouth1= function(){
     // open mouth
     noStroke();
     fill(0);
     ellipse(this.mouthX1,this.mouthY1,this.mouthSize1,this.mouthSize1);
+};
+
+PersonOne.prototype.mvt_mouthClosed1= function(){
+    // closed mouth
+    noFill();
+    stroke(0);
+    curve(this.smirkX,this.smirkY1,this.smirkX*1.1,this.x*1.05,this.smirkX*1.2,this.x*1.125,this.smirkX*1.3,this.smirkCurve);
+
+};
+PersonOne.prototype.mvt_uniBrow= function(){
+    noFill();
+    stroke(0);
+    curve(this.uniBrowX1*0.8,this.uniBrowY2t,this.uniBrowX1*0.85,this.unibrowCurve,this.uniBrowX1*1.15,this.unibrowCurve,this.uniBrowX1*1.3,this.uniBrowY2t);
 
 };
 
-// PersonOne.prototype.mvt_mouthClosed1= function(){
-//     // closed mouth
-//     noFill();
-//     stroke(0);
-//     curve(this.smirkX,this.smirkY1,this.smirkX*1.1,this.x*1.05,this.smirkX*1.2,this.x*1.125,this.smirkX*1.3,this.smirkCurve);
-
-// };
-
+PersonOne.prototype.mvt_uniBrow2= function(){
+    noFill();
+    stroke(0);
+    curve(this.uniBrowX1*0.8,height*0.325,this.uniBrowX1*0.85,height*0.275,this.uniBrowX1*1.15,height*0.275,this.uniBrowX1*1.3,height*0.325);
 };
