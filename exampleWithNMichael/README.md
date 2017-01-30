@@ -1,3 +1,0 @@
-<!--  -->HW 2-1 Blog Entry
-
-  The self-portrait assignment was very interesting and engaging. The arc and curve lines were the most challenging to figure out with their technicalities. The variables added before the draw function were very helpful when writing coordinates. The order of operations compelled me to work and become familiar with the coding language such as having the stroke and fill added before each shape. I watched a few videos to help me contribute more flare to my self-portrait rather than just rectangles and ellipses and Daniel Shiffman was helpful in his video on color and syntax. Overall, this assignment was very difficult while becoming accustomed to this language, but very exciting at the same time.
