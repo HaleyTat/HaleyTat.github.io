@@ -1,11 +1,11 @@
 // TIMD Project 1
 
 var Heads=[];
-
+// var img;
 
 function setup() {
+  // img=loadImage('images/blacknwhitecliff.jpeg');
   createCanvas(windowWidth,windowHeight);
-  loadImage("cliffimage.jpg");
 }
 
 function mousePressed(){
@@ -17,7 +17,8 @@ var h= new Head(random(0,width),0);
 
 function draw() {
 
-// background(loadImage("cliffimage.jpg"));
+background(0);
+// image(img,0,0);
 noStroke();
 fill(0,200,255);
 rect(width/3,height/8,width*-0.5,height*0.8);
