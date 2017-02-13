@@ -1,34 +1,28 @@
 // TIMD Project 1 Class sketch file
 
-function Head(x,y){
+function Animal(x,y){
 
     this.x=x;
     this.y=y;
-    // this.earX;
-    // this.earY;
-    // this.ear2X;
-    // this.ear2Y;
     this.speed=1;
+    // this.lifespan=255;
 }
 
-Head.prototype.display= function(){
+Animal.prototype.display= function(){
 
-    noStroke();
-    fill(179, 102, 255);
-    ellipse(this.x,this.y,30,40);
-    noStroke();
-    fill(230, 204, 255);
-    ellipse(this.x,this.y,5,10);
+    image(animals,this.x,this.y);
 
 
 };
+Animal.prototype.move= function() {
 
-Head.prototype.move= function() {
+    this.y=this.y*this.speed;
 
-    this.y=this.y+this.speed;
-
-    if (this.y>height) {
-        this.y=this.y*0.2;
+    if (this.y>800) {
+        this.speed=0.8;
+        this.y=this.y*this.speed;
     }
+
+
 
 };
